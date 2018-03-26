@@ -1,0 +1,112 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MailBot01 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\ProfNagy\LOCALS~1\Temp\RSP9F.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/MailBot01.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\USR\code\stdnoj\core\File.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ProfNagy\LOCALS~1\Temp\RSP9F.tmp" 
+Creating temporary file "D:\DOCUME~1\ProfNagy\LOCALS~1\Temp\RSPA0.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"d:\bin/EPOP.pdb" /debug /machine:I386 /out:"EPOP.EXE" /pdbtype:sept 
+.\Debug\MailBot01.obj
+.\Debug\main.obj
+..\..\..\..\lib\WSock32.Lib
+.\Debug\Utilities.obj
+.\Debug\ByteBuffer.obj
+.\Debug\CommonObject.obj
+.\Debug\Directory.obj
+.\Debug\File.obj
+.\Debug\FilePath.obj
+.\Debug\FileSystem.obj
+.\Debug\Node.obj
+.\Debug\NodeFinder.obj
+.\Debug\Platform.obj
+.\Debug\PortTime.obj
+.\Debug\ProgramId.obj
+.\Debug\StdDateTime.obj
+.\Debug\stdnoj_global.obj
+.\Debug\StdPath.obj
+.\Debug\StdString.obj
+.\Debug\Url.obj
+.\Debug\SearchData.obj
+.\Debug\Base64.obj
+.\Debug\Email.obj
+.\Debug\EmailFilter.obj
+.\Debug\EMailHeader.obj
+.\Debug\EMailLines.obj
+.\Debug\HttpLogParser.obj
+.\Debug\HyperText01.obj
+.\Debug\InetRfc.obj
+.\Debug\OutboundEmail.obj
+.\Debug\RfcObjects.obj
+.\Debug\Http.obj
+.\Debug\Socket.obj
+.\Debug\SocketMonitor.obj
+.\Debug\SocketSelect.obj
+.\Debug\StdSocket.obj
+.\Debug\EMailFactory.obj
+]
+Creating command line "link.exe @D:\DOCUME~1\ProfNagy\LOCALS~1\Temp\RSPA0.tmp"
+<h3>Output Window</h3>
+Compiling...
+File.cpp
+Linking...
+LINK : fatal error LNK1104: cannot open file "..\..\..\..\lib\WSock32.Lib"
+Error executing link.exe.
+Creating temporary file "D:\DOCUME~1\ProfNagy\LOCALS~1\Temp\RSPA1.tmp" with contents
+[
+/nologo /o"d:\bin/MailBot01.bsc" 
+.\Debug\MailBot01.sbr
+.\Debug\main.sbr
+.\Debug\Utilities.sbr
+.\Debug\ByteBuffer.sbr
+.\Debug\CommonObject.sbr
+.\Debug\Directory.sbr
+.\Debug\File.sbr
+.\Debug\FilePath.sbr
+.\Debug\FileSystem.sbr
+.\Debug\Node.sbr
+.\Debug\NodeFinder.sbr
+.\Debug\Platform.sbr
+.\Debug\PortTime.sbr
+.\Debug\ProgramId.sbr
+.\Debug\StdDateTime.sbr
+.\Debug\stdnoj_global.sbr
+.\Debug\StdPath.sbr
+.\Debug\StdString.sbr
+.\Debug\Url.sbr
+.\Debug\SearchData.sbr
+.\Debug\Base64.sbr
+.\Debug\Email.sbr
+.\Debug\EmailFilter.sbr
+.\Debug\EMailHeader.sbr
+.\Debug\EMailLines.sbr
+.\Debug\HttpLogParser.sbr
+.\Debug\HyperText01.sbr
+.\Debug\InetRfc.sbr
+.\Debug\OutboundEmail.sbr
+.\Debug\RfcObjects.sbr
+.\Debug\Http.sbr
+.\Debug\Socket.sbr
+.\Debug\SocketMonitor.sbr
+.\Debug\SocketSelect.sbr
+.\Debug\StdSocket.sbr
+.\Debug\EMailFactory.sbr]
+Creating command line "bscmake.exe @D:\DOCUME~1\ProfNagy\LOCALS~1\Temp\RSPA1.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+EPOP.EXE - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

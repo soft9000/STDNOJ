@@ -1,0 +1,4 @@
+.REM Directory documentation.
+
+When logging leads to blogging. Some light pattern 
+and paradigm R&D. Very much a work in progress.

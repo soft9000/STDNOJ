@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pageTest", "pageTest.vcproj", "{3B3FE8D7-68EE-4117-B3A5-F38E3F7C6D6F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stdnoj_sl", "..\..\..\_SUPPORT\VS.NET_stdnoj_sl\stdnoj_sl.vcproj", "{B347D46E-1861-462E-8E42-2A24468508CF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3B3FE8D7-68EE-4117-B3A5-F38E3F7C6D6F}.Debug.ActiveCfg = Debug|Win32
+		{3B3FE8D7-68EE-4117-B3A5-F38E3F7C6D6F}.Debug.Build.0 = Debug|Win32
+		{3B3FE8D7-68EE-4117-B3A5-F38E3F7C6D6F}.Release.ActiveCfg = Release|Win32
+		{3B3FE8D7-68EE-4117-B3A5-F38E3F7C6D6F}.Release.Build.0 = Release|Win32
+		{B347D46E-1861-462E-8E42-2A24468508CF}.Debug.ActiveCfg = Debug|Win32
+		{B347D46E-1861-462E-8E42-2A24468508CF}.Debug.Build.0 = Debug|Win32
+		{B347D46E-1861-462E-8E42-2A24468508CF}.Release.ActiveCfg = Release|Win32
+		{B347D46E-1861-462E-8E42-2A24468508CF}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

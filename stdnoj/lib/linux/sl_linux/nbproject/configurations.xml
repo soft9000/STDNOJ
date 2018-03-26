@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="51">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="core" displayName="core" projectFiles="true">
+        <itemPath>../../../core/Array.hpp</itemPath>
+        <itemPath>../../../core/BigFileSize.hpp</itemPath>
+        <itemPath>../../../core/ByteBuffer.cpp</itemPath>
+        <itemPath>../../../core/ByteBuffer.hpp</itemPath>
+        <itemPath>../../../core/CommonObject.cpp</itemPath>
+        <itemPath>../../../core/CommonObject.hpp</itemPath>
+        <itemPath>../../../core/CompArray.hpp</itemPath>
+        <itemPath>../../../core/dfo.hpp</itemPath>
+        <itemPath>../../../core/DFOArray.hpp</itemPath>
+        <itemPath>../../../core/Directory.cpp</itemPath>
+        <itemPath>../../../core/Directory.hpp</itemPath>
+        <itemPath>../../../core/File.cpp</itemPath>
+        <itemPath>../../../core/File.hpp</itemPath>
+        <itemPath>../../../core/FilePath.cpp</itemPath>
+        <itemPath>../../../core/FilePath.hpp</itemPath>
+        <itemPath>../../../core/FileSystem.cpp</itemPath>
+        <itemPath>../../../core/FileSystem.hpp</itemPath>
+        <itemPath>../../../core/Integer.hpp</itemPath>
+        <itemPath>../../../core/Node.cpp</itemPath>
+        <itemPath>../../../core/Node.hpp</itemPath>
+        <itemPath>../../../core/NodeFinder.cpp</itemPath>
+        <itemPath>../../../core/NodeFinder.hpp</itemPath>
+        <itemPath>../../../core/NodeWalker.hpp</itemPath>
+        <itemPath>../../../core/NumericBase.hpp</itemPath>
+        <itemPath>../../../core/ObjectThunk.hpp</itemPath>
+        <itemPath>../../../core/Platform.cpp</itemPath>
+        <itemPath>../../../core/Platform.hpp</itemPath>
+        <itemPath>../../../core/PortTime.cpp</itemPath>
+        <itemPath>../../../core/PortTime.hpp</itemPath>
+        <itemPath>../../../core/presto.hpp</itemPath>
+        <itemPath>../../../core/ProgramId.cpp</itemPath>
+        <itemPath>../../../core/ProgramId.hpp</itemPath>
+        <itemPath>../../../core/RecArray.hpp</itemPath>
+        <itemPath>../../../core/ScreenSaver.hpp</itemPath>
+        <itemPath>../../../core/StdDateTime.cpp</itemPath>
+        <itemPath>../../../core/StdDateTime.hpp</itemPath>
+        <itemPath>../../../core/stdnoj_global.cpp</itemPath>
+        <itemPath>../../../core/StdPath.cpp</itemPath>
+        <itemPath>../../../core/StdPath.hpp</itemPath>
+        <itemPath>../../../core/StdSeek.hpp</itemPath>
+        <itemPath>../../../core/StdString.cpp</itemPath>
+        <itemPath>../../../core/StdString.hpp</itemPath>
+        <itemPath>../../../core/StringMatcher.hpp</itemPath>
+        <itemPath>../../../core/TypeThunk.hpp</itemPath>
+        <itemPath>../../../core/Url.cpp</itemPath>
+        <itemPath>../../../core/Url.hpp</itemPath>
+        <itemPath>../../../core/Utilities.cpp</itemPath>
+        <itemPath>../../../core/Utilities.hpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../../core</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <ccCompilerTool>
+          <includeDirectories>
+            <directoryPath>../../..</directoryPath>
+          </includeDirectories>
+          <preprocessorList>
+            <Elem>UNIX</Elem>
+          </preprocessorList>
+        </ccCompilerTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="../../../core/Array.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/BigFileSize.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/ByteBuffer.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/ByteBuffer.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/CommonObject.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/CommonObject.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/CompArray.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/DFOArray.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/Directory.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/Directory.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/File.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/File.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/FilePath.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/FilePath.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/FileSystem.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/FileSystem.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/Integer.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/Node.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/Node.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/NodeFinder.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/NodeFinder.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/NodeWalker.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/NumericBase.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/ObjectThunk.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/Platform.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/Platform.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/PortTime.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/PortTime.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/ProgramId.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/ProgramId.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/RecArray.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/ScreenSaver.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/StdDateTime.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/StdDateTime.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/StdPath.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/StdPath.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/StdSeek.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/StdString.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/StdString.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/StringMatcher.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/TypeThunk.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/Url.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/Url.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/Utilities.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/Utilities.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/dfo.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/presto.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/stdnoj_global.cpp">
+        <itemTool>1</itemTool>
+      </item>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <cCompilerTool>
+          <developmentMode>5</developmentMode>
+        </cCompilerTool>
+        <ccCompilerTool>
+          <developmentMode>5</developmentMode>
+          <includeDirectories>
+            <directoryPath>../../..</directoryPath>
+          </includeDirectories>
+          <preprocessorList>
+            <Elem>UNIX</Elem>
+          </preprocessorList>
+        </ccCompilerTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="../../../core/Array.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/BigFileSize.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/ByteBuffer.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/ByteBuffer.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/CommonObject.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/CommonObject.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/CompArray.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/DFOArray.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/Directory.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/Directory.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/File.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/File.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/FilePath.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/FilePath.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/FileSystem.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/FileSystem.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/Integer.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/Node.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/Node.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/NodeFinder.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/NodeFinder.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/NodeWalker.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/NumericBase.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/ObjectThunk.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/Platform.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/Platform.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/PortTime.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/PortTime.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/ProgramId.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/ProgramId.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/RecArray.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/ScreenSaver.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/StdDateTime.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/StdDateTime.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/StdPath.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/StdPath.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/StdSeek.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/StdString.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/StdString.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/StringMatcher.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/TypeThunk.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/Url.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/Url.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/Utilities.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../core/Utilities.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/dfo.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/presto.hpp">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../core/stdnoj_global.cpp">
+        <itemTool>1</itemTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,0 +1,38 @@
+.REM Directory documentation.
+
+TAB to Space Delimited Format (SDF)
+-----------------------------------
+I cobbled this NOJ together while struggling with 
+the need to expand a tab-delimited file into something 
+more viewable. e.g:
+
+Tool Usage
+==========
+(1) Create a funky tab file -
+MYDIR> RTree # > REPORT.TAB
+
+(2) Use Tab2SDF to view the content
+MYDIR> Tab2SFD REPORT.TAB
+
+	Or
+
+(2) Use Tab2SDF to view the content
+MYDIR> Tab2SFD REPORT.TAB > REPORT.SDF
+
+Piped Usage
+===========
+(1) You can also use this noj as a pipe-fitting
+
+MYDIR> RTree # | sort | Tab2SDF ! > REPORT.SDF
+                                ^
+* - My personal preference for a pipe mode indicator is [!]
+
+How it Works:
+=============
+This program scans the REPORT.TAB file twice.
+   Once to determine the optimal fill for each field and
+   Once to display file content to cout / stdout.
+
+Simple yet very handy, this C++ tool is also neat for 
+people who work with legacy COBOL data file / dataset 
+formats. The perfect NOJ!

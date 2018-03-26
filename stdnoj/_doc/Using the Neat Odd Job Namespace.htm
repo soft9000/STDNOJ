@@ -1,0 +1,356 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Using the Neat Odd Job Namespace</TITLE>
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080">
+
+<B><FONT FACE="Arial" SIZE=6 COLOR="#000080"><P><A NAME="_Toc151086108">A Beginners Guide</A></P>
+</B></FONT><FONT SIZE=5><P>If a picture is worth a thousand words then, when programming, a snippet of code is worth at <I>least</I> a few hundred explanations!</P>
+<P>Here is the first:</P>
+</FONT>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=638>
+<TR><TD VALIGN="TOP" BGCOLOR="#c0c0c0" HEIGHT=113>
+<FONT FACE="Courier New" SIZE=3><P>#include &lt;stdnoj.hpp&gt;</P>
+<P>using namespace </FONT><B><FONT FACE="Courier New" SIZE=3 COLOR="#008000">stdnoj</B></FONT><FONT FACE="Courier New" SIZE=3>;</P>
+<P>int main(int argc, char *argv[])</P>
+<P>{</P>
+<P>}</FONT></TD>
+</TR>
+</TABLE>
+
+<P>&nbsp;</P>
+<FONT SIZE=5><P>Once we have the main </FONT><FONT SIZE=5 COLOR="#008000">stdnoj.hpp</FONT><FONT SIZE=5> file </FONT><A HREF="http://stdnoj.cvs.sourceforge.net/stdnoj/stdnoj/"><FONT SIZE=5>downloaded</FONT></A><FONT SIZE=5> and located somewhere along our include path, there are many things that we can do. This document describes just a few of them. </P>
+<P>&nbsp;</P>
+</FONT><B><FONT FACE="Arial" SIZE=4 COLOR="#ff0000"><P><A NAME="_Toc151086109">File System Support</A></P>
+</B></FONT><FONT SIZE=5><P>Long before the Internet was popular, this goal of this project was to provide cross-platform support for basic file and directory operations. Before you can compile, you will need to globally #define your platform as either </FONT><B><FONT SIZE=5 COLOR="#0000ff">WIN32</B></FONT><FONT SIZE=5>, </FONT><B><FONT SIZE=5 COLOR="#0000ff">UNIX</B></FONT><FONT SIZE=5>, </FONT><B><FONT SIZE=5 COLOR="#0000ff">DOS</B></FONT><FONT SIZE=5>, or </FONT><B><FONT SIZE=5 COLOR="#0000ff">OSX</B></FONT><FONT SIZE=5>. </P>
+<P>&nbsp;</P>
+<P>While support for WIN32 enjoys the most comprehensive, support for DOS and UNIX/Linux are not too far behind. Better support for OSX and others is in the works.</P>
+<P>&nbsp;</P>
+<P>Because files system interactions are the most common model across these operating systems, the </FONT><A HREF="http://soft9000.com/NOJ_Introduction.html"><FONT SIZE=5>Namespace</FONT></A><FONT SIZE=5> has a lot of "inode support."</P>
+<P>&nbsp;</P><DIR>
+<DIR>
+
+</FONT><B><FONT FACE="Arial" COLOR="#ff0000"><P><A NAME="_Toc151086110">The File</A></P></DIR>
+</DIR>
+
+</B></FONT><FONT SIZE=5><P>First, and unless you are programming for something like Version 5 of the Palm OS, then your program will probably be using a lot of files.</P>
+</FONT>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=638>
+<TR><TD VALIGN="TOP" BGCOLOR="#c0c0c0" HEIGHT=216>
+<FONT FACE="Courier New" SIZE=3><P>#include &lt;stdnoj.hpp&gt;</P>
+<P>using namespace stdnoj;</P>
+<P>int main(int argc, char *argv[])</P><DIR>
+<DIR>
+
+<P>{</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// Create a file - default name is "default.file"</P>
+</FONT><FONT FACE="Courier New" SIZE=3><P>File file;</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// Name the file something</P>
+</FONT><FONT FACE="Courier New" SIZE=3><P>if(file.</FONT><B><FONT FACE="Courier New" SIZE=3 COLOR="#008000">Name</B></FONT><FONT FACE="Courier New" SIZE=3>("myfile.txt") == </FONT><FONT FACE="Courier,Courier New" SIZE=3 COLOR="#0000ff">false</FONT><FONT FACE="Courier New" SIZE=3>)</P>
+<P>   cerr &lt;&lt; "bad platform name";</P>
+<P>}</DIR>
+</DIR>
+</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT SIZE=5><P>&nbsp;</P>
+<P>Because directory and path separators can be different between various operating systems, the Namespace also has a </FONT><FONT SIZE=5 COLOR="#008000">FilePath</FONT><FONT SIZE=5> Class. Amongst other things, FilePath allows us to peek at the default path separator.</P>
+</FONT>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=638>
+<TR><TD VALIGN="TOP" BGCOLOR="#c0c0c0" HEIGHT=25>
+<FONT FACE="Courier New" SIZE=3><P>inline char </FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000">PathChar</FONT><FONT FACE="Courier New" SIZE=3>(void)</P>
+<P>   {</P>
+<P>   FilePath fp;</P>
+<P>   return fp.PathChar();</P>
+<P>   }</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT SIZE=5><P>&nbsp;</P>
+<P>As defined above, </FONT><FONT SIZE=5 COLOR="#008000">PathChar()</FONT><FONT SIZE=5> is a globally defined macro. While located in FilePath.hpp, the macro is available every time you use the Namespace.</P>
+<P>&nbsp;</P><DIR>
+<DIR>
+
+</FONT><B><FONT FACE="Arial" COLOR="#ff0000"><P><A NAME="_Toc151086111">Directories</A></P></DIR>
+</DIR>
+
+</B></FONT><FONT SIZE=5><P>Directories are also a very common cross-platform convention. </P>
+</FONT>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=638>
+<TR><TD VALIGN="TOP" BGCOLOR="#c0c0c0" HEIGHT=25>
+<FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>#include</FONT><FONT FACE="Courier New" SIZE=3> &lt;stdnoj.hpp&gt;</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>using</FONT><FONT FACE="Courier New" SIZE=3> </FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">namespace</FONT><FONT FACE="Courier New" SIZE=3> stdnoj;</P>
+<P>&nbsp;</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>int</FONT><FONT FACE="Courier New" SIZE=3> main(</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">int</FONT><FONT FACE="Courier New" SIZE=3> argc, </FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">char</FONT><FONT FACE="Courier New" SIZE=3> *argv[])</P><DIR>
+<DIR>
+
+<P>{</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// Create a file - default name is "default.file"</P>
+</FONT><FONT FACE="Courier New" SIZE=3><P>File file;</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// Name the file something</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>if</FONT><FONT FACE="Courier New" SIZE=3>(file.Name("myfile.txt") == </FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">false</FONT><FONT FACE="Courier New" SIZE=3>)</P>
+<P>   cerr &lt;&lt; "bad platform name";</P>
+<P>&nbsp;</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// Directories default to the 'pwd'</P>
+</FONT><FONT FACE="Courier New" SIZE=3><P>Directory dir;</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// The "Home" function places a node into a folder</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>if</FONT><FONT FACE="Courier New" SIZE=3>(dir.Home(file) == </FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">false</FONT><FONT FACE="Courier New" SIZE=3>)</P>
+<P>   cerr &lt;&lt; "bad folder name";</P>
+<P>}</DIR>
+</DIR>
+</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT SIZE=5><P>&nbsp;</P>
+<P>While Files and Directories evolved separately, by the time they were eventually re-factored and ported over to the modern Namespace both </FONT><FONT SIZE=5 COLOR="#008000">File</FONT><FONT SIZE=5> and </FONT><FONT SIZE=5 COLOR="#008000">Directory</FONT><FONT SIZE=5> had a lot to do with each other!</P>
+<P>&nbsp;</P><DIR>
+<DIR>
+
+</FONT><B><FONT FACE="Arial" COLOR="#ff0000"><P><A NAME="_Toc151086112">Directory Content</A></P></DIR>
+</DIR>
+
+</B></FONT><FONT SIZE=5><P>The ultimate container, a Directory can manage both files and folders.</P>
+</FONT>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=638>
+<TR><TD VALIGN="TOP" BGCOLOR="#c0c0c0" HEIGHT=25>
+<FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>void</FONT><FONT FACE="Courier New" SIZE=3> QueryFileContent(</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">void</FONT><FONT FACE="Courier New" SIZE=3>)</P><DIR>
+<DIR>
+
+<P>{</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// The array class is the major container</P>
+<P>// for this namespace</P>
+</FONT><FONT FACE="Courier New" SIZE=3><P>Array&lt;File&gt; aryFiles;</P>
+<P>&nbsp;</P>
+<P>Directory dir;</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// Both folders and files and be queried</P>
+</FONT><FONT FACE="Courier New" SIZE=3><P>dir.Query(aryFiles);</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// Nelem() returns the count of the objects </P>
+<P>// (ones based)</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>for</FONT><FONT FACE="Courier New" SIZE=3>(size_t ss = 0L; ss &lt; aryFiles.Nelem(); ss++)</P>
+<P>   cout &lt;&lt; "Got " &lt;&lt; aryFiles[ss].Name() &lt;&lt; endl;</P>
+<P>}</DIR>
+</DIR>
+</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT SIZE=5><P>&nbsp;</P>
+<P>The first rule of modeling <I>should be</I> to create classes that use things in a similar way.  When related classes use similar class signatures, very few things need to be re-learned. When we know how to work with one, how know how to work with another.</P>
+</FONT>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=638>
+<TR><TD VALIGN="TOP" BGCOLOR="#c0c0c0" HEIGHT=25>
+<FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>void</FONT><FONT FACE="Courier New" SIZE=3> QueryContent(</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">const</FONT><FONT FACE="Courier New" SIZE=3> Directory&amp; dir)</P><DIR>
+<DIR>
+
+<P>{</P>
+<P>Array&lt;File&gt; aryFiles;</P>
+<P>dir.</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000">Query</FONT><FONT FACE="Courier New" SIZE=3>(aryFiles);</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>for</FONT><FONT FACE="Courier New" SIZE=3>(size_t ss = 0L; ss &lt; aryFiles.Nelem(); ss++)</P>
+<P>   cout &lt;&lt; "Got " &lt;&lt; aryFiles[ss].</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000">Name</FONT><FONT FACE="Courier New" SIZE=3>() &lt;&lt; endl;</P>
+<P>&nbsp;</P>
+<P>Array&lt;File&gt; aryDirs;</P>
+<P>dir.</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000">Query</FONT><FONT FACE="Courier New" SIZE=3>(aryDirs);</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>for</FONT><FONT FACE="Courier New" SIZE=3>(size_t ss = 0L; ss &lt; aryDirs.Nelem(); ss++)</P>
+<P>   cout &lt;&lt; "Got " &lt;&lt; aryDirs[ss].</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000">Name</FONT><FONT FACE="Courier New" SIZE=3>() &lt;&lt; endl;</P>
+<P>}</DIR>
+</DIR>
+</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT SIZE=5><P>&nbsp;</P>
+<P>Notice that because the design of the File Class is much like the design of Directory, that using these objects is easy. </P>
+<P>&nbsp;</P>
+</FONT><B><FONT FACE="Arial" SIZE=4 COLOR="#ff0000"><P><A NAME="_Toc151086113">Collections &amp; Templates</A></P>
+</B></FONT><FONT SIZE=5><P>From collecting email to managing sockets and folders, the Namespace does it all using a mere handful of templates. Because Namespace Templates do not rely upon any other template libraries (like the Standard Template Library), </FONT><B><FONT SIZE=5 COLOR="#008000">stdnoj</B></FONT><FONT SIZE=5> can be used either stand-alone or with other tool sets.</P>
+</FONT><P>&nbsp;</P><DIR>
+<DIR>
+
+<B><FONT FACE="Arial" COLOR="#ff0000"><P><A NAME="_Toc151086114">STL Compatibility</A></P></DIR>
+</DIR>
+
+</B></FONT><FONT SIZE=5><P>The following example demonstrates how easy it can be to use the Array Class with an STL string.</P>
+</FONT>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=638>
+<TR><TD VALIGN="TOP" BGCOLOR="#c0c0c0" HEIGHT=25>
+<FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>void</FONT><FONT FACE="Courier New" SIZE=3> TheString(</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">void</FONT><FONT FACE="Courier New" SIZE=3>)</P><DIR>
+<DIR>
+
+<P>{</P>
+<P>Array&lt;string&gt; array;</P>
+<P>array[0] = "this";</P>
+<P>array[1] = "is a";</P>
+<P>array[2] = "test!";</P>
+<P>}</DIR>
+</DIR>
+</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT SIZE=5><P>&nbsp;</P><DIR>
+<DIR>
+
+</FONT><B><FONT FACE="Arial" COLOR="#ff0000"><P><A NAME="_Toc151086115">Common Signatures</A></P></DIR>
+</DIR>
+
+</B></FONT><FONT SIZE=5><P>Just like when we were demonstrating the File and Directory Classes, templates require that managed objects share portions of a certain signature. This commonality allows us to manage an array of objects in a similar manner.</P>
+</FONT>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=638>
+<TR><TD VALIGN="TOP" BGCOLOR="#c0c0c0" HEIGHT=25>
+<FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>void</FONT><FONT FACE="Courier New" SIZE=3> TheStdString(</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">void</FONT><FONT FACE="Courier New" SIZE=3>)</P><DIR>
+<DIR>
+
+<P>{</P>
+<P>Array&lt;</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000">StdString</FONT><FONT FACE="Courier New" SIZE=3>&gt; array;</P>
+<P>array[0] = "this";</P>
+<P>array[1] = "is a";</P>
+<P>array[2] = "test!";</P>
+<P>&nbsp;</P>
+<P>File file;</P>
+<P>array.write(file.OpenWrite());</P>
+<P>file.Close();</P>
+<P>}</DIR>
+</DIR>
+</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT SIZE=5><P>&nbsp;</P>
+<P>Because the string class shares common assignment, comparison, and stream member functions, </FONT><FONT SIZE=5 COLOR="#008000">StdString</FONT><FONT SIZE=5> is the preferred string for the </FONT><B><FONT SIZE=5 COLOR="#008000">stdnoj</B></FONT><FONT SIZE=5> namespace.</P>
+<P>&nbsp;</P>
+</FONT><B><FONT FACE="Arial" SIZE=4 COLOR="#ff0000"><P><A NAME="_Toc151086116">Object Storage and Retrieval</A></P>
+</B></FONT><FONT SIZE=5><P>In addition to file system and array operations, the Namespace also has a lot of support for managing collections of data. From storing the content of an array to managing user preferences, spreadsheet data, and indexed object content, it is very likely that </FONT><B><FONT SIZE=5 COLOR="#008000">stdnoj</B></FONT><FONT SIZE=5> has a lot to help you along with your maintenance chores.</P>
+<P>&nbsp;</P><DIR>
+<DIR>
+
+</FONT><B><FONT FACE="Arial" COLOR="#ff0000"><P><A NAME="_Toc151086117">Character Delimited Text</A></P></DIR>
+</DIR>
+
+</B></FONT><FONT SIZE=5><P>As in any language, the </FONT><B><FONT SIZE=5 COLOR="#008000">stdnoj</B></FONT><FONT SIZE=5> string class is one of the most used classes. For the reason, the Namespace has very robust and mature support for string management. Here is a teaser:</P>
+</FONT>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=638>
+<TR><TD VALIGN="TOP" BGCOLOR="#c0c0c0" HEIGHT=25>
+<FONT FACE="Courier New" SIZE=3><P>Array&lt;StdString&gt; SplitTabs(</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">const</FONT><FONT FACE="Courier New" SIZE=3> StdString&amp; sTab)</P>
+<P>{</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>return</FONT><FONT FACE="Courier New" SIZE=3> sTab.slice('\t');</P>
+<P>}</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT SIZE=5><P>&nbsp;</P>
+<P>The above example demonstrates how easy it can be to split any string into an array... not something other string classes are usually able to do in a single line of code...</P>
+<P>&nbsp;</P><DIR>
+<DIR>
+
+</FONT><B><FONT FACE="Arial" COLOR="#ff0000"><P>Appreciating StdString</P></DIR>
+</DIR>
+
+</B></FONT><FONT SIZE=5><P>Because the </FONT><FONT SIZE=5 COLOR="#008000">StdString</FONT><FONT SIZE=5> Class contains many such handy operations, many feel that it is a good place to start an investigation into what the Namespace can do for you. While we plan to re-write the StdString class to us STL's <I>string</I> and <I>wstring</I> types like Array, the class is well represented in the Namespace.</P>
+<P>&nbsp;</P><DIR>
+<DIR>
+
+</FONT><B><FONT FACE="Arial" COLOR="#ff0000"><P><A NAME="_Toc151086118">Direct File Objects (DFO)</A></P></DIR>
+</DIR>
+
+</B></FONT><FONT SIZE=5><P>In order to increase loading performance as well as to allow many collections to be streamed in and out of a single file, the Array Class saves the number of objects that it writes at the beginning of each stream. Many </FONT><B><FONT SIZE=5 COLOR="#008000">stdnoj</B></FONT><FONT SIZE=5> classes are aware of this convention.</P>
+</FONT>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=638>
+<TR><TD VALIGN="TOP" BGCOLOR="#c0c0c0" HEIGHT=25>
+<FONT FACE="Courier,Courier New" COLOR="#0000ff"><P>#include</FONT><FONT FACE="Courier,Courier New"> &lt;noj/DFO.hpp&gt;</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>void</FONT><FONT FACE="Courier New" SIZE=3> FileImport(</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">const</FONT><FONT FACE="Courier New" SIZE=3> File&amp; file)</P><DIR>
+<DIR>
+
+<P>{</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// "Direct File Object" are either in a "heap"</P>
+<P>// (one after another) or in an "Array" (prefixed </P>
+<P>// with the number of objects saved)</P>
+</FONT><FONT FACE="Courier New" SIZE=3><P>DFO&lt;StdString&gt; tabFile;</P>
+<P>tabFile.Name(file);</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// Loads a binary file from a "heap"</P>
+</FONT><FONT FACE="Courier New" SIZE=3><P>tabFile.Load(File::AT_TEXT, </FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">false</FONT><FONT FACE="Courier New" SIZE=3>);</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// Saves a text file of strings in a "Array"</P>
+</FONT><FONT FACE="Courier New" SIZE=3><P>tabFile.Save(File::AT_BINARY, </FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">true</FONT><FONT FACE="Courier New" SIZE=3>);</P>
+<P>}</DIR>
+</DIR>
+</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT SIZE=5><P>&nbsp;</P>
+<P>Because the Class will read data stored in heap <I>or</I> array formats, DFO allows us to make a distinction between (1) when we want to manage an Array of objects or (2) when we want to merely work with a disk-based collection of same.</P>
+<P>&nbsp;</P><DIR>
+<DIR>
+
+</FONT><B><FONT FACE="Arial" COLOR="#ff0000"><P><A NAME="_Toc151086119">Indexing Data</A></P></DIR>
+</DIR>
+
+</B></FONT><FONT SIZE=5><P>When it comes to managing a huge amount of data without loading an entire file into memory, the </FONT><B><FONT SIZE=5 COLOR="#008000">StdSeek</B></FONT><FONT SIZE=5> Class allows us to do so easily.</P>
+</FONT>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=638>
+<TR><TD VALIGN="TOP" BGCOLOR="#c0c0c0" HEIGHT=25>
+<FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>void</FONT><FONT FACE="Courier New" SIZE=3> IndexFile(</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">const</FONT><FONT FACE="Courier New" SIZE=3> File&amp; file)</P><DIR>
+<DIR>
+
+<P>{</P>
+<P>DFO&lt;StdString&gt; tabFile;</P>
+<P>tabFile.Name(file);</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// Loads a binary file from a "heap"</P>
+</FONT><FONT FACE="Courier New" SIZE=3><P>tabFile.Load(File::AT_TEXT, </FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">false</FONT><FONT FACE="Courier New" SIZE=3>);</P>
+<P>&nbsp;</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// </FONT><B><FONT FACE="Courier New" SIZE=3 COLOR="#ff0000">WARNING:</B></FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"> This over writes the file</P>
+<P>// with the indexed content!</P>
+</FONT><FONT FACE="Courier New" SIZE=3><P>StdSeek&lt;StdString&gt; indexFile;</P>
+<P>indexFile.Name(file);</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>for</FONT><FONT FACE="Courier New" SIZE=3>(size_t ss = 0L; ss &lt; tabFile.Nelem(); ss++)</P>
+<P>   indexFile.Append(tabFile[ss]);</P>
+<P>}</DIR>
+</DIR>
+</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT SIZE=5><P>&nbsp;</P>
+<P>Once indexed, virtually instantaneous access to any individual object in a file is assured... very handy when managing a monstrous collection of data! </P>
+<P>&nbsp;</P>
+</FONT><B><FONT FACE="Arial" SIZE=4 COLOR="#ff0000"><P><A NAME="_Toc151086120">Program Identity</A></P>
+</B></FONT><FONT SIZE=5><P>While the sorted details of internal operating system machinations differ wildly today, developers often feel the need to quickly know <I>just where their programs are running</I>. </P>
+<P>The </FONT><B><FONT SIZE=5 COLOR="#008000">ProgramId</B></FONT><FONT SIZE=5> Class helps us to keep track of things.</P>
+</FONT>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=638>
+<TR><TD VALIGN="TOP" BGCOLOR="#c0c0c0" HEIGHT=25>
+<FONT FACE="Courier New" SIZE=3 COLOR="#0000ff"><P>void</FONT><FONT FACE="Courier New" SIZE=3> HomeBody(</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#0000ff">void</FONT><FONT FACE="Courier New" SIZE=3>)</P><DIR>
+<DIR>
+
+<P>{</P>
+</FONT><FONT FACE="Courier New" SIZE=3 COLOR="#008000"><P>// Using ProgramId to home-in </P>
+<P>// on resources</P>
+</FONT><FONT FACE="Courier New" SIZE=3><P>ProgramId pid;</P>
+<P>&nbsp;</P>
+<P>Directory dir;</P>
+<P>pid.Home(dir);</P>
+<P>&nbsp;</P>
+<P>File file;</P>
+<P>pid.Home(file);</P>
+<P>}</DIR>
+</DIR>
+</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT SIZE=5><P> </P>
+<P>Like the StdString, File, Directory, and Array Classes, the </FONT><FONT SIZE=5 COLOR="#008000">ProgramId</FONT><FONT SIZE=5> Class seems to make it into just about everyone's program sooner or later.</P>
+<P> </P>
+</FONT><B><FONT FACE="Arial" SIZE=4 COLOR="#ff0000"><P><A NAME="_Toc151086121">Conclusion</A></P>
+</B></FONT><FONT SIZE=5><P>While this should help you get started, we have just scratched the surface of what this Namespace can do for you. As time permits we will try to cover the operation of EMail, IniFile, RfcServer, StdLog, and many, many more classes. Be sure to check back a few time each year to see what we are able to get done. </P>
+<P>&nbsp;</P>
+<P>Now that you have been armed with the basics it would be a great time to jump right to the </FONT><FONT SIZE=5 COLOR="#008000">stdnoj/</FONT><A HREF="http://stdnoj.cvs.sourceforge.net/stdnoj/stdnoj/projects/"><FONT SIZE=5>projects</FONT></A><FONT SIZE=5> directory to see what other type things you can do with the namespace. Because we have used this project on everything from Borland to Visual Studio, it should compile well on your platform. While support for WIN32 is the most comprehensive (it is where we earn the </FONT><A HREF="http://soft9000.com/"><FONT SIZE=5>most money</FONT></A><FONT SIZE=5>), in addition to perfecting the Linux and Unix support plans are even afoot for finishing up under Carbon on Mac OSX!</P>
+<P>&nbsp;</P>
+<P>Enjoy,</P>
+<P>&nbsp;</P>
+<P>R. Nagy</P>
+</FONT></BODY>
+</HTML>

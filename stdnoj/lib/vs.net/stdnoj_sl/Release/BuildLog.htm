@@ -1,0 +1,109 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: stdnoj_sl, Configuration: Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "d:\Usr\code\stdnoj\lib\vs.net\stdnoj_sl\Release\RSP000045.rsp" with contents
+[
+/O2 /I "D:\USR\code\stdnoj" /D "WIN32" /D "NDEBUG" /D "_LIB" /D "_MBCS" /FD /EHsc /ML /GS /Fo"Release/" /Fd"Release/vc70.pdb" /W3 /c /Wp64 /Zi /TP
+\Usr\code\stdnoj\core\CommonObject.cpp
+\Usr\code\stdnoj\core\ByteBuffer.cpp
+\Usr\code\stdnoj\core\Utilities.cpp
+\Usr\code\stdnoj\core\Url.cpp
+\Usr\code\stdnoj\core\StdString.cpp
+\Usr\code\stdnoj\core\StdPath.cpp
+\Usr\code\stdnoj\core\stdnoj_global.cpp
+\Usr\code\stdnoj\core\StdDateTime.cpp
+\Usr\code\stdnoj\core\ProgramId.cpp
+\Usr\code\stdnoj\core\PortTime.cpp
+\Usr\code\stdnoj\core\Platform.cpp
+\Usr\code\stdnoj\core\NodeFinder.cpp
+\Usr\code\stdnoj\core\Node.cpp
+\Usr\code\stdnoj\core\FileSystem.cpp
+\Usr\code\stdnoj\core\FilePath.cpp
+\Usr\code\stdnoj\core\File.cpp
+\Usr\code\stdnoj\core\Directory.cpp
+]
+Creating command line "cl.exe @d:\Usr\code\stdnoj\lib\vs.net\stdnoj_sl\Release\RSP000045.rsp /nologo"
+Creating temporary file "d:\Usr\code\stdnoj\lib\vs.net\stdnoj_sl\Release\RSP000046.rsp" with contents
+[
+/OUT:"D:\USR\code\stdnoj\lib\vs.net/stdnoj_sl.lib" /NOLOGO
+.\release\Directory.obj
+.\release\File.obj
+.\release\FilePath.obj
+.\release\FileSystem.obj
+.\release\Node.obj
+.\release\NodeFinder.obj
+.\release\Platform.obj
+.\release\PortTime.obj
+.\release\ProgramId.obj
+.\release\StdDateTime.obj
+.\release\stdnoj_global.obj
+.\release\StdPath.obj
+.\release\StdString.obj
+.\release\Url.obj
+.\release\Utilities.obj
+.\release\ByteBuffer.obj
+.\release\CommonObject.obj
+]
+Creating command line "lib.exe @d:\Usr\code\stdnoj\lib\vs.net\stdnoj_sl\Release\RSP000046.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+CommonObject.cpp
+ByteBuffer.cpp
+\USR\code\stdnoj\core\ByteBuffer.cpp(154) : warning C4018: '<' : signed/unsigned mismatch
+\USR\code\stdnoj\core\ByteBuffer.cpp(165) : warning C4018: '<' : signed/unsigned mismatch
+\USR\code\stdnoj\core\ByteBuffer.cpp(213) : warning C4267: 'argument' : conversion from 'size_t' to 'std::streamsize', possible loss of data
+\USR\code\stdnoj\core\ByteBuffer.cpp(227) : warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+\USR\code\stdnoj\core\ByteBuffer.cpp(229) : warning C4267: 'argument' : conversion from 'size_t' to 'std::streamsize', possible loss of data
+\USR\code\stdnoj\core\ByteBuffer.cpp(251) : warning C4267: 'argument' : conversion from 'size_t' to 'std::streamsize', possible loss of data
+Utilities.cpp
+\USR\code\stdnoj\core\Utilities.cpp(114) : warning C4018: '<' : signed/unsigned mismatch
+\USR\code\stdnoj\core\Utilities.cpp(141) : warning C4018: '>=' : signed/unsigned mismatch
+Url.cpp
+D:\USR\code\stdnoj\core\win32\win32_Url.cpp(36) : warning C4311: 'type cast' : pointer truncation from 'HINSTANCE' to 'int'
+StdString.cpp
+\USR\code\stdnoj\core\StdString.cpp(538) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+\USR\code\stdnoj\core\StdString.cpp(541) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+\USR\code\stdnoj\core\StdString.cpp(544) : warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+\USR\code\stdnoj\core\StdString.cpp(545) : warning C4267: '+=' : conversion from 'size_t' to 'int', possible loss of data
+\USR\code\stdnoj\core\StdString.cpp(625) : warning C4318: passing constant zero as the length to memset
+\USR\code\stdnoj\core\StdString.cpp(668) : warning C4267: 'argument' : conversion from 'size_t' to 'unsigned int', possible loss of data
+\USR\code\stdnoj\core\StdString.cpp(693) : warning C4267: 'argument' : conversion from 'size_t' to 'std::streamsize', possible loss of data
+\USR\code\stdnoj\core\StdString.cpp(709) : warning C4267: 'argument' : conversion from 'size_t' to 'std::streamsize', possible loss of data
+\USR\code\stdnoj\core\StdString.cpp(827) : warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+StdPath.cpp
+stdnoj_global.cpp
+StdDateTime.cpp
+\USR\code\stdnoj\core\StdDateTime.cpp(32) : warning C4244: 'argument' : conversion from '__w64 long' to 'long', possible loss of data
+ProgramId.cpp
+PortTime.cpp
+Platform.cpp
+D:\USR\code\stdnoj\core\win32\win32_Platform.cpp(54) : warning C4311: 'type cast' : pointer truncation from 'HINSTANCE' to 'int'
+D:\USR\code\stdnoj\core\win32\win32_Platform.cpp(61) : warning C4311: 'type cast' : pointer truncation from 'HINSTANCE' to 'int'
+D:\USR\code\stdnoj\core\win32\win32_Platform.cpp(302) : warning C4267: 'initializing' : conversion from 'size_t' to 'long', possible loss of data
+D:\USR\code\stdnoj\core\win32\win32_Platform.cpp(304) : warning C4267: '=' : conversion from 'size_t' to 'long', possible loss of data
+D:\USR\code\stdnoj\core\win32\win32_Platform.cpp(323) : warning C4267: '=' : conversion from 'size_t' to 'long', possible loss of data
+NodeFinder.cpp
+Node.cpp
+FileSystem.cpp
+FilePath.cpp
+File.cpp
+Directory.cpp
+Generating Code...
+Creating library...
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://d:\Usr\code\stdnoj\lib\vs.net\stdnoj_sl\Release\BuildLog.htm"
+stdnoj_sl - 0 error(s), 24 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>
