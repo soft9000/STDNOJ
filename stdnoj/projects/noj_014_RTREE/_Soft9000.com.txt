@@ -1,0 +1,17 @@
+.REM Directory documentation.
+
+Microsoft Operating Systems have always been "command 
+line challenged." I cobbled this NOJ together while 
+struggling with the need to create scripts or batch files
+that will list a directory tree in a node-sortable order.
+Great for reviewing the output in a spread sheet. e.g:
+
+\MYDIR> RTree # | SORT > \REPORT.TAB
+
+Demonstrates how to use recursion today via a modern 
+C++ namespace. Will work on any supported OS. See the
+PathChar() usage to see how easy it can be.
+
+If you suspect that you have a lot of duplicate nodes 
+in a tree, then RTREE can be a very handy tool to have
+on your path.

@@ -1,0 +1,13 @@
+.REM Directory documentation.
+
+NojView: This program is a portable (WIN32 / Linux) hex 
+dumper / text viewer. While simple, it demonstrates how 
+to use some Borland's CLX / VCL components, as well as the 
+stdnoj::ByteBuffer. Requires Borland's CLX.
+
+Note that the project file is for WIN32. Will work
+on Linux, but you will need to convert or recreate
+the project file using Kylix, first.
+
+Project built with Borland C++Builder 6.
+

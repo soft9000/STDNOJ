@@ -1,0 +1,11 @@
+.REM Directory documentation.
+
+Microsoft Operating Systems have always been "command 
+line challenged." I cobbled this NOJ together while 
+struggling with the need to create scripts or batch files
+that will manage a huge number of files at once. 
+
+A superset of this functionality is in FileSpy - But here 
+is some of the code that it uses.
+
+Very handy tool.

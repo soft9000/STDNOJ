@@ -1,0 +1,18 @@
+.REM Directory documentation.
+
+EzLog is a command line utility. It has been designed
+to log its content either to the pwd, to a file higher 
+up in the directory tree, or to a file located next to
+wherever the program itself is located. Each option is
+supported by a single command-line character.
+
+Very handy tool. When used with the "@" parameter, it
+even makes for a handy geek blogging tool. -A good 
+way to keep track of things that you did for the day, 
+are billing a client for (etc.) I have come to rely
+upon it a lot.
+
+Note that for proper browser viewing, the graphic files 
+in this folder need to be deployed next to the executable.
+
+For more information, see ./EzLog/ReadMe.TXT

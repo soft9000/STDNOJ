@@ -1,0 +1,4 @@
+.REM Directory documentation. 
+Utility: Used to distribute the MIT header over a file.
+
+Project built with Visual C++ 6.

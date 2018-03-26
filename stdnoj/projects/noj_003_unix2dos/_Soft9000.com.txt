@@ -1,0 +1,5 @@
+.REM Directory documentation.
+Utility: Convert a UNIX text file over to a DOS / Windows newline format.
+
+Project built with Visual C++ 6.
+

@@ -1,0 +1,7 @@
+.REM Directory documentation.
+Program: Portable HTTP server log repository and query database.
+Command line interface. Uses stdnoj technologies. Primitive, 
+but effective. Needs to have the indexing technology added to it.
+
+Project built with Visual C++ 6.
+

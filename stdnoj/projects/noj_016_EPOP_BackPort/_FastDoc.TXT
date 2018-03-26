@@ -1,0 +1,12 @@
+12/19/2008 14:49:20 - This is a back-port of the Able1 project of the same name to STDNOJ.
+12/19/2008 14:49:34 - NO NEW FEATURES, PLEASE!
+
+Animating PopServer in such a way so as to manage any
+single account .ini file. Default or can be passed in 
+on the command line. Subject forms the basis for the 
+file name.
+
+We think people now need (2008/11) to see the source code, 
+but this version of the project (_SUPPORT) was released to 
+the public. Do we need to re-create a back-release that 
+works with STDNOJ, or release a lib-only version?
