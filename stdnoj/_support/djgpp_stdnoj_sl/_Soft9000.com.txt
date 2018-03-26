@@ -1,0 +1,2 @@
+.REM Directory documentation. Visit Soft9000.com.
+Library: Create a library using DJGPP's 16-bit (DTA limited) linker.

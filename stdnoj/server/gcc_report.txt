@@ -1,0 +1,6 @@
+Compilation Errors Reported  - none if empty
+===========================================
+/usr/lib/gcc/i686-pc-cygwin/3.4.4/../../../../include/w32api/winsock2.h:635: error: declaration of C function `int gethostname(char*, int)' conflicts with
+/usr/include/sys/unistd.h:206: error: previous declaration `int gethostname(char*, size_t)' here
+/usr/lib/gcc/i686-pc-cygwin/3.4.4/../../../../include/w32api/winsock2.h:635: error: declaration of C function `int gethostname(char*, int)' conflicts with
+/usr/include/sys/unistd.h:206: error: previous declaration `int gethostname(char*, size_t)' here

@@ -1,0 +1,26 @@
+Compilation Errors Reported  - none if empty
+===========================================
+/usr/lib/gcc/i686-pc-cygwin/3.4.4/../../../../include/w32api/winsock2.h:635: error: declaration of C function `int gethostname(char*, int)' conflicts with
+/usr/include/sys/unistd.h:206: error: previous declaration `int gethostname(char*, size_t)' here
+/usr/lib/gcc/i686-pc-cygwin/3.4.4/../../../../include/w32api/winsock2.h:635: error: declaration of C function `int gethostname(char*, int)' conflicts with
+/usr/include/sys/unistd.h:206: error: previous declaration `int gethostname(char*, size_t)' here
+/usr/lib/gcc/i686-pc-cygwin/3.4.4/../../../../include/w32api/winsock2.h:635: error: declaration of C function `int gethostname(char*, int)' conflicts with
+/usr/include/sys/unistd.h:206: error: previous declaration `int gethostname(char*, size_t)' here
+/usr/lib/gcc/i686-pc-cygwin/3.4.4/../../../../include/w32api/winsock2.h:635: error: declaration of C function `int gethostname(char*, int)' conflicts with
+/usr/include/sys/unistd.h:206: error: previous declaration `int gethostname(char*, size_t)' here
+SocketSelect.cpp:257: error: 'struct _types_fd_set' has no member named 'fd_count'
+SocketSelect.cpp:258: error: 'struct _types_fd_set' has no member named 'fd_array'
+URL.cpp:84: error: `RfcProtocol' is not a class or namespace
+URL.cpp:192: error: `RfcProtocol' is not a class or namespace
+URL.cpp:197: error: `RfcProtocol' is not a class or namespace
+URL.cpp:202: error: `RfcProtocol' is not a class or namespace
+URL.cpp:207: error: `RfcProtocol' is not a class or namespace
+URL.cpp:212: error: `RfcProtocol' is not a class or namespace
+URL.cpp:217: error: `RfcProtocol' is not a class or namespace
+URL.cpp:222: error: `RfcProtocol' is not a class or namespace
+URL.cpp:227: error: `RfcProtocol' is not a class or namespace
+URL.cpp:232: error: `RfcProtocol' is not a class or namespace
+URL.cpp:237: error: `RfcProtocol' is not a class or namespace
+URL.cpp:326: error: `struct stdnet::URL::RfcProtocol' is not a class or namespace
+URL.cpp:396: error: `RfcProtocol' is not a class or namespace
+URL.cpp:435: error: `RfcProtocol' is not a class or namespace

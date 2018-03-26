@@ -1,0 +1,7 @@
+.REM Directory documentation. 
+
+Library: Create the library using Microsoft Visual 
+Studio.NET.
+
+Output is sent to matching folder under stdnoj/lib.
+

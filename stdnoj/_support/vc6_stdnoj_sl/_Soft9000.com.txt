@@ -1,0 +1,6 @@
+.REM Directory documentation.
+
+Library: Create a COFF file using Microsoft 
+Visual Studio 6.0 and later.
+
+Release is sent to matching folder under stdnoj/lib.
