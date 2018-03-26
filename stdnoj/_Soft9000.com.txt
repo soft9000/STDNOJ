@@ -1,0 +1,2 @@
+.REM Directory documentation. Visit Soft9000.com.
+This is the official location of the STDNOJ Namespace.
