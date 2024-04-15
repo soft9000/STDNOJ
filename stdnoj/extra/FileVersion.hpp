@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -36,9 +36,9 @@ IN THE SOFTWARE.
 // FileVersion to see if the products match up. See EzInstall::Query() and QueryImport() for 
 // an example of how this can be easily implemented using polymorphism.
 //
-// 03/18/1998: Class created, R. Nagy
-// 11/16/1998: Added ProgramId in default constructor to replace "undefined", R. Nagy
-//             Virtualized Read() and read()/write() to allow class to be "grown", R. Nagy
+// 03/18/1998: Class created, Randall Nagy
+// 11/16/1998: Added ProgramId in default constructor to replace "undefined", Randall Nagy
+//             Virtualized Read() and read()/write() to allow class to be "grown", Randall Nagy
 //
 #ifndef FILE_VERSIONx_HPP
 #define FILE_VERSIONx_HPP

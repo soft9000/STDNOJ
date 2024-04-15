@@ -278,7 +278,7 @@ StdString MailBot01::ProgramByline(void)
    str += ProgramVersion();
    str += ": ";
    str += __DATE__;
-   str += ", via R.A. Nagy";
+   str += ", via Randall Nagy";
    return str;
    }
 

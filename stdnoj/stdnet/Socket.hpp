@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -38,7 +38,7 @@ IN THE SOFTWARE.
 // Windows developers will need to include a reference to ws2_32.lib in 
 // their project (replaces the old wsock32.lib) to make the link work -
 //
-// 09/15/2006: Refactored SocketSelect into Socket,    R. Nagy 
+// 09/15/2006: Refactored SocketSelect into Socket,    Randall Nagy 
 //
 #ifndef zSocket78_Hpp
 #define zSocket78_Hpp

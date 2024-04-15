@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -25,9 +25,9 @@ IN THE SOFTWARE.
 // storage. Great for when number of records is large, and you are "goal seeking"
 // a record / set / dump.
 //
-// 06/23/1997, Class Created (bare essentials!), R. Nagy.
-// 05/22/1998, Now using "StdString" rather than "StdString", R. Nagy.
-//    Created BinRecEnum, R. Nagy.
+// 06/23/1997, Class Created (bare essentials!), Randall Nagy.
+// 05/22/1998, Now using "StdString" rather than "StdString", Randall Nagy.
+//    Created BinRecEnum, Randall Nagy.
 //
 #ifndef RecEnum_Hpp
 #define RecEnum_Hpp

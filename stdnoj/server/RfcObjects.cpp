@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -67,7 +67,7 @@ bool RfcStatusCode::Assign(const StdString& stdIn) {
         case '4':
         case '5':
         {
-            if ((std[3] != ' ') && std[3] != '-') // 8/17/2002: Big blocks of status and documentation are also possible now (e.g: EHLO), R. Nagy
+            if ((std[3] != ' ') && std[3] != '-') // 8/17/2002: Big blocks of status and documentation are also possible now (e.g: EHLO), Randall Nagy
                 break;
             std[3] = NULL;
             iCode = ::atoi(std.c_str());

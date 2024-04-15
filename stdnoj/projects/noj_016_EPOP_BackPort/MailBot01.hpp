@@ -4,7 +4,7 @@
 //
 // 11/26/2006: Class created using Visual Studio 6.x (.NET 2005 is tragic in its C++ / POSIX / WIN32 support.)
 // 12/24/2007: Creation resumed to assist the RSS Robot Project.
-// 01/19/2008: Addded the -m, -o, and -p options to support the GUI interface easier, R. Nagy
+// 01/19/2008: Addded the -m, -o, and -p options to support the GUI interface easier, Randall Nagy
 //
 #include <stdnoj.hpp>
 #include <Extra/ini/IniFile.hpp>

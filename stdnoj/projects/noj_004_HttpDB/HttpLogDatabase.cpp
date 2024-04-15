@@ -164,7 +164,7 @@ bool HttpLogDatabase::Query(DatabaseQuery& dq, Array<File>& aFiles, bool bNormal
          // Error is posted by call
          return false;
          }
-      pwFile.Close();     // 12/17/2003 Bugfix: Stopped on 8 (file handle limit), R. Nagy
+      pwFile.Close();     // 12/17/2003 Bugfix: Stopped on 8 (file handle limit), Randall Nagy
       }
    return true;
    }

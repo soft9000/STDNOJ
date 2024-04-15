@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -23,9 +23,9 @@ IN THE SOFTWARE.
  */
 // These classes are used to quickly find multiple keys in a ascii-z text.
 //
-// Classes created 12/28/1998, R. Nagy
-// 10/16/1999: Added capability to search binary-buffers, R. Nagy
-// 09/23/2003: Ported to stdnoj, R. Nagy
+// Classes created 12/28/1998, Randall Nagy
+// 10/16/1999: Added capability to search binary-buffers, Randall Nagy
+// 09/23/2003: Ported to stdnoj, Randall Nagy
 //
 #ifndef zHyperText_Hpp
 #define zHyperText_Hpp

@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -25,20 +25,20 @@ IN THE SOFTWARE.
 // Originally written in C, converted to C++, and finaly ported to stdnoj, it could use
 // some re-deisgn.
 //
-// 04/19/1998: TABOUT && converting to WIN32 (weekend #2), R. Nagy
-// 05/18/1998: Fixed IniSection::FindValue() to take a buffer for the result (no reference caching on StdString), R. Nagy
-// 09/07/1998: Converted to string, R. Nagy.
-// 10/19/1998: Fixed a bug in _chop() as a result of conversion of cstring.contains() to string.find(), R. Nagy
-// 10/26/1999: Massively updated to work with "const StdString&" over "const char *" (etc), R. Nagy.
-// 03/10/2001: Re-wrote IniSection::_rmbracket() so that it would work properly? R. Nagy
-// 03/13/2005: Converting (in-place - no port!) to stdnoj, R. Nagy
-// 08/29/2006: Updating, R. Nagy
-// 08/23/2006: Copied to the stdnoj project as IniFile (formerly known as inistrm), R. Nagy
-// 10/16/2006: Updated Insert(...) to reflect the more stand-alone usage paradigm, R. Nagy
-//             Depricated Update(...) and Insert(...) in favor of Write(...), R. Nagy
-//             Changed Read(void) to Load(void). Changed Write(void) to Save(void), R. Nagy
+// 04/19/1998: TABOUT && converting to WIN32 (weekend #2), Randall Nagy
+// 05/18/1998: Fixed IniSection::FindValue() to take a buffer for the result (no reference caching on StdString), Randall Nagy
+// 09/07/1998: Converted to string, Randall Nagy.
+// 10/19/1998: Fixed a bug in _chop() as a result of conversion of cstring.contains() to string.find(), Randall Nagy
+// 10/26/1999: Massively updated to work with "const StdString&" over "const char *" (etc), Randall Nagy.
+// 03/10/2001: Re-wrote IniSection::_rmbracket() so that it would work properly? Randall Nagy
+// 03/13/2005: Converting (in-place - no port!) to stdnoj, Randall Nagy
+// 08/29/2006: Updating, Randall Nagy
+// 08/23/2006: Copied to the stdnoj project as IniFile (formerly known as inistrm), Randall Nagy
+// 10/16/2006: Updated Insert(...) to reflect the more stand-alone usage paradigm, Randall Nagy
+//             Depricated Update(...) and Insert(...) in favor of Write(...), Randall Nagy
+//             Changed Read(void) to Load(void). Changed Write(void) to Save(void), Randall Nagy
 //             Dropped virtual memberships. As a pattern for re-use, TVRs are far better, R.Nagy
-// 10/25/2006: Added New(), R. Nagy
+// 10/25/2006: Added New(), Randall Nagy
 //
 // TODO
 // ====

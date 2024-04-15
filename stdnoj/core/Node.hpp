@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -22,27 +22,27 @@ IN THE SOFTWARE.
 
  */
 // **************************************************************************
-// The NODES Project.  Started on 08/25/95, by and exclusively for R. A. Nagy
+// The NODES Project.  Started on 08/25/95, by and exclusively for Randall Nagy
 // This is private and confidential stuff.
 // If you are reading or using this code without my expressed permission,
 //          -I'm a gonna slappa yo face....  :-o
 //
-// Project begun 95/08/25, R. A. Nagy
-//    o  Initial set-up of the Node hirearchy and browser, R. Nagy.
+// Project begun 95/08/25, Randall Nagy
+//    o  Initial set-up of the Node hirearchy and browser, Randall Nagy.
 // 10/02/1996: Promoted a majority of the DOS implemnetation to Node && wrote -n- tested
-//    the stream I/O logic.  Also removed Type(), R. Nagy
-// 06/23/1997: f_attrib fixed to copy-over on operator=(), R. Nagy
-// 01/07/1998: Moved it over to StdString, R. Nagy
-// 01/08/1998: Added Extract(PortTime), R. Nagy
-// 01/29/1998: Fixed FullName(const StdString&): sDrive got a path 'cuz of an rfind(), R. Nagy
+//    the stream I/O logic.  Also removed Type(), Randall Nagy
+// 06/23/1997: f_attrib fixed to copy-over on operator=(), Randall Nagy
+// 01/07/1998: Moved it over to StdString, Randall Nagy
+// 01/08/1998: Added Extract(PortTime), Randall Nagy
+// 01/29/1998: Fixed FullName(const StdString&): sDrive got a path 'cuz of an rfind(), Randall Nagy
 // 07/15/1998: Moved it over to string from StdString.
-// 07/16/1998: Added "NormalizePath" && made everything into UNIX path-seperators, R. Nagy.
-//             Node I/O LOGIC: Use .read_stream(): white_space is the norm in file-names now, R. Nagy.
-// 10/15/1999: Ran through NOTAB and added copy-constructor, R. Nagy
-// 11/03/1999: Added PathName(), R. Nagy
-// 12/07/1999: Added Open(), R. Nagy
-// 11/13/2008: Lightly updated to support commmon usage, R. Nagy
-// 11/24/2008: Re-arranging headers to better support G++, R. Nagy
+// 07/16/1998: Added "NormalizePath" && made everything into UNIX path-seperators, Randall Nagy.
+//             Node I/O LOGIC: Use .read_stream(): white_space is the norm in file-names now, Randall Nagy.
+// 10/15/1999: Ran through NOTAB and added copy-constructor, Randall Nagy
+// 11/03/1999: Added PathName(), Randall Nagy
+// 12/07/1999: Added Open(), Randall Nagy
+// 11/13/2008: Lightly updated to support commmon usage, Randall Nagy
+// 11/24/2008: Re-arranging headers to better support G++, Randall Nagy
 //
 // **************************************************************************
 // NOTE: Unlike Files and Directories, nodes MUST exist on any file system.

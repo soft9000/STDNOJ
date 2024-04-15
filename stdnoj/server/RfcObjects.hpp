@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -23,11 +23,11 @@ IN THE SOFTWARE.
  */
 // Classes to encapsulate the status and data for RFC object transferrals.
 //
-// 02/12/1998: Classes removed from InetRfc, R. Nagy
-// 01/08/1999: Added OnVerbose() to track all of those (potentially interesting) messages, R. Nagy
-// 03/10/2001: Added mkwhite() after UserData.User() assignment. Have discoverd email systems permit all types of nasties therein, R. Nagy
-// 08/17/2002: Added support for LocalHost on Host class to support SMTP HELO protocol, R. Nagy
-// 09/23/2003: Ported to stdnoj, R. Nagy
+// 02/12/1998: Classes removed from InetRfc, Randall Nagy
+// 01/08/1999: Added OnVerbose() to track all of those (potentially interesting) messages, Randall Nagy
+// 03/10/2001: Added mkwhite() after UserData.User() assignment. Have discoverd email systems permit all types of nasties therein, Randall Nagy
+// 08/17/2002: Added support for LocalHost on Host class to support SMTP HELO protocol, Randall Nagy
+// 09/23/2003: Ported to stdnoj, Randall Nagy
 //
 #ifndef zRfcObjects_Hpp
 #define zRfcObjects_Hpp

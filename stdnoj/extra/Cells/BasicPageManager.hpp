@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -24,8 +24,8 @@ IN THE SOFTWARE.
 // The BasicPageManager allows a "frame" (page) to be imposed upon a line enumeration.
 // In general, the page manager returns the line number, not the page, of each operation.
 //
-// 08/17/2008: Class created, R. Nagy
-// 08/18/2008: Lightly tested. Basic functionality assured, but more on the way, R. Nagy
+// 08/17/2008: Class created, Randall Nagy
+// 08/18/2008: Lightly tested. Basic functionality assured, but more on the way, Randall Nagy
 //
 #ifndef BasicLineManager_hppx
 #define BasicLineManager_hppx

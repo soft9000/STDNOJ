@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -21,8 +21,8 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE. 
 
 */
-// 12/20/1998: Created class for QUOTEZ scripture data conversion, R. Nagy
-// 01/06/2000: Added stand-alone usage of GetLine(), R. Nagy
+// 12/20/1998: Created class for QUOTEZ scripture data conversion, Randall Nagy
+// 01/06/2000: Added stand-alone usage of GetLine(), Randall Nagy
 //
 #ifndef Csv_Hpp
 #define Csv_Hpp

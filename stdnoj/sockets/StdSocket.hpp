@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -23,7 +23,7 @@ IN THE SOFTWARE.
  */
 // Class StdSocket: This class is depricated. Use stdnet, instead.
 //
-// Class created 12/22/1997, R. A. Nagy (WinSock2 version)
+// Class created 12/22/1997, Randall Nagy (WinSock2 version)
 //
 // Testing results;
 // ===============
@@ -32,13 +32,13 @@ IN THE SOFTWARE.
 // "nntp.ix.netcom.com", 119           (worked okay)
 // "popd.ix.netcom.com", IPPORT_MTP    (did not work: it's something other than _MTP!)
 //
-// 12/24/1997: Added select(TIMEOUT) to IO to keep from blocking-forever, R. Nagy.
-//             Added MonitorConnection(), R. Nagy.
-// 01/21/1998: Added the Trace facility, R. Nagy.
-// 01/31/1998: Implemented the timeout_ai, R. Nagy.
-// 12/03/1998: Added timeout value to ::Transact(), R. Nagy.
-// 09/23/2003: Ported to stdnoj, R. Nagy
-// 09/24/2003: Changed SOC_TIMEOUT from 100L to 15L (untested), R. Nagy
+// 12/24/1997: Added select(TIMEOUT) to IO to keep from blocking-forever, Randall Nagy.
+//             Added MonitorConnection(), Randall Nagy.
+// 01/21/1998: Added the Trace facility, Randall Nagy.
+// 01/31/1998: Implemented the timeout_ai, Randall Nagy.
+// 12/03/1998: Added timeout value to ::Transact(), Randall Nagy.
+// 09/23/2003: Ported to stdnoj, Randall Nagy
+// 09/24/2003: Changed SOC_TIMEOUT from 100L to 15L (untested), Randall Nagy
 // 09/15/2006: RETIRED: This class is obsolete. Use nojnet::NetSocket, instead!
 //
 #ifndef zStdSocket_Hpp

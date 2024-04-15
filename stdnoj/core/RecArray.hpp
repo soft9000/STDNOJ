@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -36,14 +36,14 @@ IN THE SOFTWARE.
 // 
 // Member functions don't cache anything, so you can code && reuse this with impunity.
 //
-// Class created 07/22/1997, by R. Nagy
+// Class created 07/22/1997, by Randall Nagy
 //
-// 12/06/2003: Updated to work with Visual Studio 6, R. Nagy
-// 08/04/2008: Fixed the update to File usage after stdnoj port under VS.NET 2003, R. Nagy
+// 12/06/2003: Updated to work with Visual Studio 6, Randall Nagy
+// 08/04/2008: Fixed the update to File usage after stdnoj port under VS.NET 2003, Randall Nagy
 //             Verified using _spi::test() routine.
-// 01/05/2008: Updated seeking to use File logic, R. Nagy
-// 08/25/2005: Added is_removed() and swap(). Removed commented-out FILE * logic, R. Nagy
-// 08/26/2005: Replaced "const char *" with "const StdString&" in naming functions, R. Nagy
+// 01/05/2008: Updated seeking to use File logic, Randall Nagy
+// 08/25/2005: Added is_removed() and swap(). Removed commented-out FILE * logic, Randall Nagy
+// 08/26/2005: Replaced "const char *" with "const StdString&" in naming functions, Randall Nagy
 //
 #include <cstdio>
 #include <fstream>
@@ -142,12 +142,12 @@ namespace stdnoj {
 
     template <class T>
     bool RecArray<T>::update(seek_t which, T& ref) {
-        File file; // 12/06/2003: Converted to avoid Microsoft stream anomalies in VC 6, R. Nagy
+        File file; // 12/06/2003: Converted to avoid Microsoft stream anomalies in VC 6, Randall Nagy
         file.Name(iFile);
         iostream& fs = file.OpenReadWrite(File::AT_BINARY);
         if (!fs)
             return false;
-        fs.seekp(which * sizeof (T)); // 12/06/2003: Changed seekg to seekp, R. Nagy
+        fs.seekp(which * sizeof (T)); // 12/06/2003: Changed seekg to seekp, Randall Nagy
         if (fs.bad())
             return false;
         fs.write((const char *) & ref, sizeof (T));
@@ -158,12 +158,12 @@ namespace stdnoj {
 
     template <class T>
     bool RecArray<T>::remove(seek_t which) {
-        File file; // 12/06/2003: Converted to avoid Microsoft stream anomalies in VC 6, R. Nagy
+        File file; // 12/06/2003: Converted to avoid Microsoft stream anomalies in VC 6, Randall Nagy
         file.Name(iFile);
         iostream& fs = file.OpenReadWrite(File::AT_BINARY);
         if (!fs)
             return false;
-        fs.seekp(which * sizeof (T)); // 12/06/2003: Changed seekg to seekp, R. Nagy
+        fs.seekp(which * sizeof (T)); // 12/06/2003: Changed seekg to seekp, Randall Nagy
         if (fs.bad())
             return false;
         fs.write((const char *) & sp_npos, sizeof (T));
@@ -183,7 +183,7 @@ namespace stdnoj {
 
     template <class T>
     bool RecArray<T>::read(seek_t which, T& res) {
-        File file; // 12/06/2003: Converted to avoid Microsoft stream anomalies in VC 6, R. Nagy
+        File file; // 12/06/2003: Converted to avoid Microsoft stream anomalies in VC 6, Randall Nagy
         file.Name(iFile);
         iostream& fs = file.OpenReadWrite(File::AT_BINARY);
         if (!fs)

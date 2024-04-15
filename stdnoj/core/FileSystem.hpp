@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -24,8 +24,8 @@ IN THE SOFTWARE.
 // NodeFact unifies all of the Nodes and their factories into a single
 // usefull point of reuse.
 //
-// 07/15/1998: Added NodeCollection and GenericNodeArray<node_t>, R. Nagy.
-// 11/13/2008: Converted to static usage, R. Nagy
+// 07/15/1998: Added NodeCollection and GenericNodeArray<node_t>, Randall Nagy.
+// 11/13/2008: Converted to static usage, Randall Nagy
 //
 #ifndef _FileSystem_HPP
 #define _FileSystem_HPP

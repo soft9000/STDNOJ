@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -28,7 +28,7 @@ IN THE SOFTWARE.
 //#include <dirent.h>
 //#include <fnmatch.h>
 //
-// 02/15/2008: Filled in a few of the more important member functions using common object implmentations, R. Nagy
+// 02/15/2008: Filled in a few of the more important member functions using common object implmentations, Randall Nagy
 //
 /* TODO : Portions of FileSystem still need to be implemented. */
 

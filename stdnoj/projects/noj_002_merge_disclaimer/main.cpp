@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R.A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -31,7 +31,7 @@ IN THE SOFTWARE.
 //
 // merge ! mit_licenst.txt myfile.c
 //
-// 11/09/2003: Program Created, R. Nagy
+// 11/09/2003: Program Created, Randall Nagy
 //
 #include <stdnoj.hpp>
 

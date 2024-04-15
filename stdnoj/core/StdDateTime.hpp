@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy
+Copyright (c) 1993 - 2024 Randall Nagy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -24,15 +24,15 @@ IN THE SOFTWARE.
 // Class StdDateTime: Place to hang all of the STANDARD (portable) date-and-time
 // conversions and conventions.
 //
-// 1999/05/10: Class created, R. Nagy
-// 2001/05/09: Growing into a replacement for TDate amd TTime, R. Nagy
-// 2001/12/05: Added IsNull() and expanded support for user_assigned to recent operators, R. Nagy
-// 2003/10/30: Added EncodeMMDDYY(const StdString& str) and EncodeHHMMSS(...), R. Nagy
-// 2003/11/03: Added IsSameDate(), R. Nagy
-// 2008/04/26: Added Import / ExportDottedEditable(), R. Nagy
-// 2008/10/11: Updated EncodeDate() and EncodeTime() to preserve any complementing date / time aspect, R. Nagy
-// 2008/10/14: Changed read() and write() to use an ASCII format by default. Legacy(binary) format detected and converted on read as required, R. Nagy
-// 2008/12/06: Added operators >= and <= to support S.P.A.W.N, R. Nagy
+// 1999/05/10: Class created, Randall Nagy
+// 2001/05/09: Growing into a replacement for TDate amd TTime, Randall Nagy
+// 2001/12/05: Added IsNull() and expanded support for user_assigned to recent operators, Randall Nagy
+// 2003/10/30: Added EncodeMMDDYY(const StdString& str) and EncodeHHMMSS(...), Randall Nagy
+// 2003/11/03: Added IsSameDate(), Randall Nagy
+// 2008/04/26: Added Import / ExportDottedEditable(), Randall Nagy
+// 2008/10/11: Updated EncodeDate() and EncodeTime() to preserve any complementing date / time aspect, Randall Nagy
+// 2008/10/14: Changed read() and write() to use an ASCII format by default. Legacy(binary) format detected and converted on read as required, Randall Nagy
+// 2008/12/06: Added operators >= and <= to support S.P.A.W.N, Randall Nagy
 //
 
 #ifndef StdDateTime_Hpp

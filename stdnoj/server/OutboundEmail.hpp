@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -21,11 +21,11 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE. 
 
  */
-// 11/12/1998, Created OutboundEMail to support PostJOB1, R. Nagy
-// 11/16/1998, Added FileVersion support, R. Nagy
-// 05/17/1999, Now MUST use "Load()" and "Save()": Moved read() and write() into "protected", R. Nagy
-// 09/23/2003: Ported to stdnoj, R. Nagy
-// 06/17/2008: Added Load and Save for file objects, R. Nagy
+// 11/12/1998, Created OutboundEMail to support PostJOB1, Randall Nagy
+// 11/16/1998, Added FileVersion support, Randall Nagy
+// 05/17/1999, Now MUST use "Load()" and "Save()": Moved read() and write() into "protected", Randall Nagy
+// 09/23/2003: Ported to stdnoj, Randall Nagy
+// 06/17/2008: Added Load and Save for file objects, Randall Nagy
 //
 #ifndef zOutBoundEmail_Hpp
 #define zOutBoundEmail_Hpp

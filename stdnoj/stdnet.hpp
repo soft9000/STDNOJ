@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -27,8 +27,8 @@ IN THE SOFTWARE.
 // designed for portable operation across unix, linux, windows (WIN32), DOS, 
 // and Mac OSX.
 //
-// 09/15/2006: Namespace created, R. Nagy
-// 10/08/2006: Added a more comprehensive URL definition, R. Nagy
+// 09/15/2006: Namespace created, Randall Nagy
+// 10/08/2006: Added a more comprehensive URL definition, Randall Nagy
 //
 #ifndef stdnet_hpp
 #define stdnet_hpp

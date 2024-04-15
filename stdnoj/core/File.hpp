@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -23,40 +23,40 @@ IN THE SOFTWARE.
  */
 // Class File: Written to encapsulate all of those MS / ANSI stream differences.
 // Also serves as a place to wrapper all of those FILE_FUN functions.
-// 11/12/1998: Class written, R. Nagy.
+// 11/12/1998: Class written, Randall Nagy.
 // 04/02/1999: This thing could have only worked previously if file A/E and Name()
-//    was FQ? --Now it handles the unknown much better, R. Nagy.
+//    was FQ? --Now it handles the unknown much better, Randall Nagy.
 //       Fixed potential maintenance bugs by checking if FQFname was !NULL.
 //       Rewrote Qualify().
 //       Changed Create() from OPEN_EXISITING to CREATE_ALWAYS.
-// 07/24/1999: Added Set/QueryScopeDestruct(), R. Nagy
-// 10/16/1999: Finally unified the i/o streams by adding OpenReadWrite(), R. Nagy
-// 12/13/1999: Added Resume(), R. Nagy
+// 07/24/1999: Added Set/QueryScopeDestruct(), Randall Nagy
+// 10/16/1999: Finally unified the i/o streams by adding OpenReadWrite(), Randall Nagy
+// 12/13/1999: Added Resume(), Randall Nagy
 // 12/22/1999: Moved implementation over to File.cpp so as to remove bleed-throughs 
-//             to items in "File_Fun", R. Nagy
+//             to items in "File_Fun", Randall Nagy
 // 12/27/1999: Went over to the "xFile.hpp" convention. Allows classes to be used
-//             in external linkange, as well as inline (legacy), R. Nagy.
-// 01/15/2000: NOTE: Remove() usage changed to now imply a "close", as first, R. Nagy
-// 06/02/2001: Added IsNull(), R. Nagy
-// 06/06/2001: Tested and fixed IsNull(), R. Nagy
-// 11/22/2001: Added Time(time_t). Updated Time(void) to use same [Feliez de la estaci'on del gracias!], R. Nagy
-// 06/11/2002: Time to add an operator ==(). Compares file NAMES, only (CASE SENSITIVE), R. Nagy
-// 07/06/2002: Added QueryFileNode(), R. Nagy
-// 07/22/2002: Added LoadTextFile(), R. Nagy
-// 11/20/2002: Added LoadStreamBuffer(), R. Nagy
-// 05/08/2003: Added CanRead() / CanWrite(), R. Nagy
-// 10/30/2003: Added CopyTo(dir) and Query(dir), R. Nagy
-// 10/30/2003: Added QueryNode() and QueryParent() [to complement Directory signature], R. Nagy
-// 02/07/2008: Removed inline from standalone function definitions, R. Nagy.
-// 11/13/2008: Lightly updated to support commmon usage, R. Nagy
-// 11/24/2008: Re-arranging headers to better support G++, R. Nagy
-// 05/25/2005: Added static LoadText(), R. Nagy
-// 05/20/2005: Added SetNode() and SetParent(), R. Nagy
-// 07/05/2005: Sped up the implementaiton of LoadText(). Converted to text file mode, too, R. Nagy
-// 07/05/2005: Added LoadPureText(), R. Nagy
-// 11/25/2006: Updated MkUniqueName() to use the default node folder instead of the pwd, R. Nagy
-// 12/16/2006: Added MkUniqueName(sSuffix), R. Nagy
-// 02/10/2009: Copied MkUniqueName(2) from FastJob, R. Nagy
+//             in external linkange, as well as inline (legacy), Randall Nagy.
+// 01/15/2000: NOTE: Remove() usage changed to now imply a "close", as first, Randall Nagy
+// 06/02/2001: Added IsNull(), Randall Nagy
+// 06/06/2001: Tested and fixed IsNull(), Randall Nagy
+// 11/22/2001: Added Time(time_t). Updated Time(void) to use same [Feliez de la estaci'on del gracias!], Randall Nagy
+// 06/11/2002: Time to add an operator ==(). Compares file NAMES, only (CASE SENSITIVE), Randall Nagy
+// 07/06/2002: Added QueryFileNode(), Randall Nagy
+// 07/22/2002: Added LoadTextFile(), Randall Nagy
+// 11/20/2002: Added LoadStreamBuffer(), Randall Nagy
+// 05/08/2003: Added CanRead() / CanWrite(), Randall Nagy
+// 10/30/2003: Added CopyTo(dir) and Query(dir), Randall Nagy
+// 10/30/2003: Added QueryNode() and QueryParent() [to complement Directory signature], Randall Nagy
+// 02/07/2008: Removed inline from standalone function definitions, Randall Nagy.
+// 11/13/2008: Lightly updated to support commmon usage, Randall Nagy
+// 11/24/2008: Re-arranging headers to better support G++, Randall Nagy
+// 05/25/2005: Added static LoadText(), Randall Nagy
+// 05/20/2005: Added SetNode() and SetParent(), Randall Nagy
+// 07/05/2005: Sped up the implementaiton of LoadText(). Converted to text file mode, too, Randall Nagy
+// 07/05/2005: Added LoadPureText(), Randall Nagy
+// 11/25/2006: Updated MkUniqueName() to use the default node folder instead of the pwd, Randall Nagy
+// 12/16/2006: Added MkUniqueName(sSuffix), Randall Nagy
+// 02/10/2009: Copied MkUniqueName(2) from FastJob, Randall Nagy
 //
 #ifndef xzFile_Hpp
 #define xzFile_Hpp
@@ -102,7 +102,7 @@ namespace stdnoj {
             return QueryPathTo(str);
         }
 
-        // Retired on  10/30/2003, R. Nagy
+        // Retired on  10/30/2003, Randall Nagy
         const char *QueryPathTo(StdString& str) const; // ONLY the path to the file (no file name)
         const char *QueryFileNode(StdString& str) const; // ONLY the name of the file (no path is included)
 

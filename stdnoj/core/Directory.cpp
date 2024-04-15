@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -92,7 +92,7 @@ namespace stdnoj {
             FilePath fp;
             char ch = fp.PathChar();
             size_t whence = sName.find(ch);
-            if (whence != npos) // 06/17/2008, R. Nagy
+            if (whence != npos) // 06/17/2008, Randall Nagy
             {
 #ifndef UNIX
                 if (whence == 2 && sName[1] == ':')

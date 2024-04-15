@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -38,16 +38,16 @@ IN THE SOFTWARE.
 // Windows developers will need to include a reference to ws2_32.lib in 
 // their project (replaces the old wsock32.lib) to make the link work -
 //
-// 12/22/1997: Class created, R. A. Nagy (WinSock2 Version)
-// 12/24/1997: Added select(TIMEOUT) to IO to keep from blocking-forever, R. Nagy.
-//             Added MonitorConnection(), R. Nagy.
-// 01/21/1998: Added the Trace facility, R. Nagy.
-// 01/31/1998: Implemented the timeout_ai, R. Nagy.
-// 12/03/1998: Added timeout value to ::Transact(),   R. Nagy.
-// 09/23/2003: Ported to stdnoj, R. Nagy
-// 09/24/2003: Changed SOC_TIMEOUT from 100L to 15L,  R. Nagy
-// 09/15/2006: Coined the nojnet namespace            R. Nagy
-//             Refactored StdSocket into SocketSelect R. Nagy 
+// 12/22/1997: Class created, Randall Nagy (WinSock2 Version)
+// 12/24/1997: Added select(TIMEOUT) to IO to keep from blocking-forever, Randall Nagy.
+//             Added MonitorConnection(), Randall Nagy.
+// 01/21/1998: Added the Trace facility, Randall Nagy.
+// 01/31/1998: Implemented the timeout_ai, Randall Nagy.
+// 12/03/1998: Added timeout value to ::Transact(),   Randall Nagy.
+// 09/23/2003: Ported to stdnoj, Randall Nagy
+// 09/24/2003: Changed SOC_TIMEOUT from 100L to 15L,  Randall Nagy
+// 09/15/2006: Coined the nojnet namespace            Randall Nagy
+//             Refactored StdSocket into SocketSelect Randall Nagy 
 //
 #ifndef zSocketSelect_Hpp
 #define zSocketSelect_Hpp

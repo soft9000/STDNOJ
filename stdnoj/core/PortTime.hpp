@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -22,12 +22,12 @@ IN THE SOFTWARE.
 
  */
 // Class PortTime: Use this when you just want to store a human-readable time.
-// 01/08/1997: Class created (Document project, 32bit update), R. Nagy
+// 01/08/1997: Class created (Document project, 32bit update), Randall Nagy
 //    Interfaced same with Node1 and GetFileTime classes.
-// 11/02/1999: Added Encode/DecodeDate() and Encode/DecodeTime(), R. Nagy
-// 03/29/2001: Fixed operator < and >, R. Nagy
-// 12/05/2001: Added Extract(struct tm), R. Nagy
-// 11/24/2008: Extracted implementation into it's own file, R. Nagy
+// 11/02/1999: Added Encode/DecodeDate() and Encode/DecodeTime(), Randall Nagy
+// 03/29/2001: Fixed operator < and >, Randall Nagy
+// 12/05/2001: Added Extract(struct tm), Randall Nagy
+// 11/24/2008: Extracted implementation into it's own file, Randall Nagy
 //
 #ifndef PORT_TIME_HPP
 #define PORT_TIME_HPP

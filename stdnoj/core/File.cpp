@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -264,7 +264,7 @@ namespace stdnoj {
     bool File::CopyTo(const StdString& str) {
         if (sFQName.is_null())
             return false;
-        Close(); // 11/09/2003, R. Nagy
+        Close(); // 11/09/2003, Randall Nagy
         // This was a "file_fun" call;
         if (sFQName == str)
             return true;

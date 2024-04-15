@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -24,8 +24,8 @@ IN THE SOFTWARE.
 #ifndef _PRESTOx_HPP_
 #define _PRESTOx_HPP_
 // 01/25/2001: Changed .own() over to allow for assignment of non-ASCIIZ-type buffers.
-// 03/10/2001: Yeeesh, what happened here? This header has two deffs, adn they were NOT the same. Fixed it, R. Nagy
-// 11/24/2008: This header is obsolete. Contents moved to stdnoj proper, R. Nagy
+// 03/10/2001: Yeeesh, what happened here? This header has two deffs, adn they were NOT the same. Fixed it, Randall Nagy
+// 11/24/2008: This header is obsolete. Contents moved to stdnoj proper, Randall Nagy
 #include <sstream>
 using namespace std;
 

@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -23,15 +23,15 @@ IN THE SOFTWARE.
 */
 // TextFormatting: A place for simple text formatting tools.
 //
-// 08/10/2003: WordWrap Class Created. Competes with SimpleTextFlow (not part of stdnoj), R. Nagy
-// 01/08/2005: Ported WordWrap over to stdnoj::TextFormatting, R. Nagy
+// 08/10/2003: WordWrap Class Created. Competes with SimpleTextFlow (not part of stdnoj), Randall Nagy
+// 01/08/2005: Ported WordWrap over to stdnoj::TextFormatting, Randall Nagy
 //    Members renamed. Added a more conveniant interface.
 //    Re-worked internal normalization functions for public re-use.
-// 01/08/2005: Created the Words Class, R. Nagy
-// 01/08/2005: Created the LinearMarkup Class, R. Nagy
-// 12/26/2005: Split classes out - One class per file / header set, R. Nagy
-//    Added a few new Wrapping functions, R. Nagy
-// 05/01/2006: Changed a few legacy int-s to size_t-s, R. Nagy
+// 01/08/2005: Created the Words Class, Randall Nagy
+// 01/08/2005: Created the LinearMarkup Class, Randall Nagy
+// 12/26/2005: Split classes out - One class per file / header set, Randall Nagy
+//    Added a few new Wrapping functions, Randall Nagy
+// 05/01/2006: Changed a few legacy int-s to size_t-s, Randall Nagy
 //
 //
 #ifndef noj_word_wrap_hpp

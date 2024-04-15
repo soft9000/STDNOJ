@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy
+Copyright (c) 1993 - 2024 Randall Nagy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to
@@ -132,37 +132,37 @@ namespace stdnoj {
     }
 
     bool StdPath::Mount(const Path& path, const Url& url, Url& uResult) {
-        /* TODO 1 -oR. Nagy -c<<<WIP>>> : Need to finish this, as required. */
+        /* TODO 1 -oRandall Nagy -c<<<WIP>>> : Need to finish this, as required. */
         return false;
     }
 
     bool StdPath::Mount(const Path& path, const Url& url, File& uResult) {
-        /* TODO 1 -oR. Nagy -c<<<WIP>>> : Need to finish this, as required. */
+        /* TODO 1 -oRandall Nagy -c<<<WIP>>> : Need to finish this, as required. */
         return false;
     }
 
     bool StdPath::Mount(const Path&, const Url& url, Directory& uResult) {
-        /* TODO 1 -oR. Nagy -c<<<WIP>>> : Need to finish this, as required. */
+        /* TODO 1 -oRandall Nagy -c<<<WIP>>> : Need to finish this, as required. */
         return false;
     }
 
     bool StdPath::Mount(const Path&, const File& file, File& uResult) {
-        /* TODO 1 -oR. Nagy -c<<<WIP>>> : Need to finish this, as required. */
+        /* TODO 1 -oRandall Nagy -c<<<WIP>>> : Need to finish this, as required. */
         return false;
     }
 
     bool StdPath::Mount(const Path& path, const File& file, Url& uResult) {
-        /* TODO 1 -oR. Nagy -c<<<WIP>>> : Need to finish this, as required. */
+        /* TODO 1 -oRandall Nagy -c<<<WIP>>> : Need to finish this, as required. */
         return false;
     }
 
     bool StdPath::Mount(const Path& path, const Directory& dir, Directory& uResult) {
-        /* TODO 1 -oR. Nagy -c<<<WIP>>> : Need to finish this, as required. */
+        /* TODO 1 -oRandall Nagy -c<<<WIP>>> : Need to finish this, as required. */
         return false;
     }
 
     bool StdPath::Mount(const Path&, const Directory& dir, Url& uResult) {
-        /* TODO 1 -oR. Nagy -c<<<WIP>>> : Need to finish this, as required. */
+        /* TODO 1 -oRandall Nagy -c<<<WIP>>> : Need to finish this, as required. */
         return false;
     }
 } // stdnoj

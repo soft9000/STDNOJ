@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy
+Copyright (c) 1993 - 2024 Randall Nagy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -21,7 +21,7 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE.
 
  */
-// A string class: Will work wherever the STDLIB is sold, by R. Nagy
+// A string class: Will work wherever the STDLIB is sold, by Randall Nagy
 // ===============================================================
 // The inspiration behind this class came from working with many other string
 // classes that were either;
@@ -42,111 +42,111 @@ IN THE SOFTWARE.
 // *                                 www.Soft9000.com
 // ****************************************************************************************************
 //
-// 07/18/97: Class created, R. Nagy
-// 07/22/97: Added append() and prepend(), R. Nagy
-// 07/29/97: Added remove(), R. Nagy
-// 07/31/97: Added r/find(const char *, ..), R. Nagy
-// 07/31/97: Added reverse(), R. Nagy
-// 08/26/97: Ported to WIN32. Added default to cstring under bc, R. Nagy
-// 09/15/97: Added operators < and >, R. Nagy
-// 11/10/97: Fixed readline(is.readline(TOO_BIG)) BUG (crash on buffer overflow), R. Nagy
-//           Prompted the addition of the iomax() member functions, R. Nagy
-//           Copied over insert(ss, const char *) from a vectored version, R. Nagy
-// 12/03/97: Added strip() and Clip(), R. Nagy
-// 12/29/97: Added to_upper, to_lower(), is_null(), read_to_delim(), strip(), read_token(), R. Nagy (MailBase32_1 port)
-// 12/30/98: Added snip(), R. Nagy (GUIShell promotion)
-// 01/07/98: Fixed array-postfix bug in strip() and Clip(), R. Nagy
+// 07/18/97: Class created, Randall Nagy
+// 07/22/97: Added append() and prepend(), Randall Nagy
+// 07/29/97: Added remove(), Randall Nagy
+// 07/31/97: Added r/find(const char *, ..), Randall Nagy
+// 07/31/97: Added reverse(), Randall Nagy
+// 08/26/97: Ported to WIN32. Added default to cstring under bc, Randall Nagy
+// 09/15/97: Added operators < and >, Randall Nagy
+// 11/10/97: Fixed readline(is.readline(TOO_BIG)) BUG (crash on buffer overflow), Randall Nagy
+//           Prompted the addition of the iomax() member functions, Randall Nagy
+//           Copied over insert(ss, const char *) from a vectored version, Randall Nagy
+// 12/03/97: Added strip() and Clip(), Randall Nagy
+// 12/29/97: Added to_upper, to_lower(), is_null(), read_to_delim(), strip(), read_token(), Randall Nagy (MailBase32_1 port)
+// 12/30/98: Added snip(), Randall Nagy (GUIShell promotion)
+// 01/07/98: Fixed array-postfix bug in strip() and Clip(), Randall Nagy
 //           Added r/find(string, long)
-// 01/15/98: Fixed bug on write_stream() of null strings, R. Nagy
-// 01/19/98: Fixed rfind() to invert and use the 'pos', R. Nagy
-// 01/26/98: Deliberately "broke" substr() so we can fix it to work like ANSI / Borland. See note at same, R. Nagy
-// 01/27/98: Deliberately "broke" remove() so we can fix it to work like ANSI / Borland. See note at same, R. Nagy
-// 02/16/98: Added support for single-characters, R. Nagy
-// 03/11/98: Added and removed const char *() conversion operator (VC++ conflicted with [], error C2666): LPCSTR would work, R. Nagy
-// 03/24/98: Updated append() and prepend() to "grow" ONLY when absolutely necessary, R. Nagy
-// 03/25/98: Got rid of sizeof(NULL) padding on stream reading, R. Nagy
-// 04/20/98: Added ANSI assign(*, size_t, size_t), append(ibid) and _substr(ibid), R. Nagy
+// 01/15/98: Fixed bug on write_stream() of null strings, Randall Nagy
+// 01/19/98: Fixed rfind() to invert and use the 'pos', Randall Nagy
+// 01/26/98: Deliberately "broke" substr() so we can fix it to work like ANSI / Borland. See note at same, Randall Nagy
+// 01/27/98: Deliberately "broke" remove() so we can fix it to work like ANSI / Borland. See note at same, Randall Nagy
+// 02/16/98: Added support for single-characters, Randall Nagy
+// 03/11/98: Added and removed const char *() conversion operator (VC++ conflicted with [], error C2666): LPCSTR would work, Randall Nagy
+// 03/24/98: Updated append() and prepend() to "grow" ONLY when absolutely necessary, Randall Nagy
+// 03/25/98: Got rid of sizeof(NULL) padding on stream reading, Randall Nagy
+// 04/20/98: Added ANSI assign(*, size_t, size_t), append(ibid) and _substr(ibid), Randall Nagy
 //           Re-implemented substr() && confidently using _substr() bounds-checking.
 //           Fixed bug in remove_bytes().
-// 04/28/98: Fixed find() to work like ANSI, R. Nagy
-// 05/20/98: Created streamString. Good for use with Array<T>, R. Nagy
+// 04/28/98: Fixed find() to work like ANSI, Randall Nagy
+// 05/20/98: Created streamString. Good for use with Array<T>, Randall Nagy
 // 05/22/98: Copied over to string.hpp: Now fixed back to 100% ANSI!
-// 07/30/98: Added fix to assign(...) and _substr() to accomidate assignment of NULL's, R. Nagy
-// 09/02/98: Fixed self-assignment bug in assign(const char *), R. Nagy
-// 10/06/98: Added replace() and three (3) case-insensitive (ci_strcmp()...) comparison primitives, R. Nagy
-//           Wired-in case-sensitivity overrides on a per-function basis, R. Nagy
-//           Removed all of the "virtual" nonsense: This is purely a utility class! R. Nagy
-//           Updated and re-ran the test-validation suite. Re-fixed a self-assign()ment bug when pointers are <> but still same buffer, R. Nagy
-// 10/19/98: Renamed the entire class (again): Borland's BCB3's str::string in except.h collision reminds me that the name "string" for this class is ill-advized.., R. Nagy
+// 07/30/98: Added fix to assign(...) and _substr() to accomidate assignment of NULL's, Randall Nagy
+// 09/02/98: Fixed self-assignment bug in assign(const char *), Randall Nagy
+// 10/06/98: Added replace() and three (3) case-insensitive (ci_strcmp()...) comparison primitives, Randall Nagy
+//           Wired-in case-sensitivity overrides on a per-function basis, Randall Nagy
+//           Removed all of the "virtual" nonsense: This is purely a utility class! Randall Nagy
+//           Updated and re-ran the test-validation suite. Re-fixed a self-assign()ment bug when pointers are <> but still same buffer, Randall Nagy
+// 10/19/98: Renamed the entire class (again): Borland's BCB3's str::string in except.h collision reminds me that the name "string" for this class is ill-advized.., Randall Nagy
 // 10/20/98: Fixed a BUG in ci_strcmp(): Occurred when *str1 or *str2 was NULL: Default was 2return 0!
-//           Put back virtual functions on the "big 5", R. Nagy
-// 10/29/98: Added macros for read_string and write_string for CODE compatability, R. Nagy
-// 11/02/98: Added operators to work on streaming of nstring and size_t, R. Nagy
-// 11/05/98: Wrote a loosely-compatable version of read_string and write_string for Quotez!, R. Nagy
-// 12/08/98: Added mkwhite(void): Used to teanslate white space characters into REAL ' ', R. Nagy
-// 12/28/98: Set-up n_string as a stand-alone header for code-level enumeration, R. Nagy
-// 02/01/99: Added remove_prefix(), R. Nagy
-// 02/06/99: Added insert(size_t, n_string&), R. Nagy
-// 03/04/99: Fixed BUG in ci_strcmp() that made "fl.jobs" == "fl.jobs.www", R. Nagy
+//           Put back virtual functions on the "big 5", Randall Nagy
+// 10/29/98: Added macros for read_string and write_string for CODE compatability, Randall Nagy
+// 11/02/98: Added operators to work on streaming of nstring and size_t, Randall Nagy
+// 11/05/98: Wrote a loosely-compatable version of read_string and write_string for Quotez!, Randall Nagy
+// 12/08/98: Added mkwhite(void): Used to teanslate white space characters into REAL ' ', Randall Nagy
+// 12/28/98: Set-up n_string as a stand-alone header for code-level enumeration, Randall Nagy
+// 02/01/99: Added remove_prefix(), Randall Nagy
+// 02/06/99: Added insert(size_t, n_string&), Randall Nagy
+// 03/04/99: Fixed BUG in ci_strcmp() that made "fl.jobs" == "fl.jobs.www", Randall Nagy
 // 04/24/99: Fixed bug in remove_pos() when `end` is NULL.
-//           Fixed strip() and Clip() (both had a similar problem), R. Nagy
-// 07/26/99: Verification port to UNIX: Added strrev(), fixed prototypes. R. Nagy
-// 08/04/99: Added get_token() and remove_token(), R. Nagy
-//           Added is_space(), R. Nagy
-// 08/05/99: Fixed overflow and underflow bugs in get_ and remove_token(), R. Nagy
+//           Fixed strip() and Clip() (both had a similar problem), Randall Nagy
+// 07/26/99: Verification port to UNIX: Added strrev(), fixed prototypes. Randall Nagy
+// 08/04/99: Added get_token() and remove_token(), Randall Nagy
+//           Added is_space(), Randall Nagy
+// 08/05/99: Fixed overflow and underflow bugs in get_ and remove_token(), Randall Nagy
 // 09/14/99: Added remove/copy_pos(), _bytes(). HotSwapp'ed _bytes_from_pos and _pos_to_pos
-//           over ALL ACTIVE dependant (*.?PP, *.H) files, R. Nagy
-// 09/15/99: Added own(char *) to allow management of strstr{eam buffers, R. Nagy
-// 10/02/99: Added instance_growth_space() to allow for tunable threshold to keep from hitting the RAM for every little byte, R. Nagy
+//           over ALL ACTIVE dependant (*.?PP, *.H) files, Randall Nagy
+// 09/15/99: Added own(char *) to allow management of strstr{eam buffers, Randall Nagy
+// 10/02/99: Added instance_growth_space() to allow for tunable threshold to keep from hitting the RAM for every little byte, Randall Nagy
 //           Also removed re-arranged ::assign() to use same.
 //           Also sped-up the append().
-// 12/27/99: Renamed n_string StdString. Name touts the fact that these are still ASCIIZ string, R. Nagy
-// 01/18/00: Added is_ascii(), and seek_binary(), R. Nagy
-// 01/26/00: Added cmp(), R. Nagy
-// 01/28/00: Added is_white() is_alpha(), and is_alnum(), R. Nagy
-// 03/07/00: Added tally(), R. Nagy
-// 03/29/00: Added is_white(void), R. Nagy
-// 03/30/00: Removed bug in `remove_pos()` when 'end' was null (again!). Added DOC comments to public interface, R. Nagy
-// 04/15/00: Added remove_pattern() (a midified form of replace(...)), R. Nagy
-// 08/18/00: Fixed bug in reverse(evil cast operation), added find_last(), R. Nagy
-// 09/28/00: Added integer assignment, and as_int(), R. Nagy
-// 11/09/00: Fixed the .GT. and .LT. operators (yeeesh!), R. Nagy
-// 11/24/00: Added some externs for support of Snip(etc), R. Nagy
-// 12/02/00: Fixed overflow possibility before internal calls to _substr(), R. Nagy
+// 12/27/99: Renamed n_string StdString. Name touts the fact that these are still ASCIIZ string, Randall Nagy
+// 01/18/00: Added is_ascii(), and seek_binary(), Randall Nagy
+// 01/26/00: Added cmp(), Randall Nagy
+// 01/28/00: Added is_white() is_alpha(), and is_alnum(), Randall Nagy
+// 03/07/00: Added tally(), Randall Nagy
+// 03/29/00: Added is_white(void), Randall Nagy
+// 03/30/00: Removed bug in `remove_pos()` when 'end' was null (again!). Added DOC comments to public interface, Randall Nagy
+// 04/15/00: Added remove_pattern() (a midified form of replace(...)), Randall Nagy
+// 08/18/00: Fixed bug in reverse(evil cast operation), added find_last(), Randall Nagy
+// 09/28/00: Added integer assignment, and as_int(), Randall Nagy
+// 11/09/00: Fixed the .GT. and .LT. operators (yeeesh!), Randall Nagy
+// 11/24/00: Added some externs for support of Snip(etc), Randall Nagy
+// 12/02/00: Fixed overflow possibility before internal calls to _substr(), Randall Nagy
 //           Added subpos(...).
-// 03/10/01: Changed our definition if is_white() to match our implementation of mkwhite(), R. Nagy
+// 03/10/01: Changed our definition if is_white() to match our implementation of mkwhite(), Randall Nagy
 //           Added is_white(char) as the common base and made all draw definition from it.
-// 03/13/01: Fixed operator >() and operator <() to work as expected with quicksort, R. Nagy.
-// 03/20/01: Fixed remove_pattern() signature to more accurately represent what function does, R. Nagy
-// 06/12/01: Fixed underflow bug in Clip(), R. Nagy
-// 06/21/01: Added assign(istream&), R. Nagy
-// 09/08/01: Updated read() and read_stream() to react better on stream error, R. Nagy
-// 10/14/01: Fixed a bug that had crept into in rfind(), R. Nagy
-// 06/04/02: Fixed bug in remove_token(), R. Nagy
-// 08/09/02: Fixed bug in is_white(), R. Nagy
-// 08/23/02: Finally added additon operators, R. Nagy
-// 10/21/02: Added to_up_low(), R. Nagy
-// 11/25/02: Added find_any() and rfind_any() to avoid confusion while using case-insensitive form of earlier namesakes, R. Nagy
-// 12/26/02: Fixed bug that crept into assign(psz, size_t, size_t), R. Nagy
-// 01/12/03: Porting over to Linux (GCC), R. Nagy
-// 11/09/03: Changed usage of operator+ to concatenate and create a new string. Operator += still appends, R. Nagy
-// 04/06/04: Added enumerate(), R. Nagy
-// 04/26/04: Added to_long(), R. Nagy
-// 05/02/04: Added append(const char ch, size_t count), R. Nagy
-// 06/07/04: Fixed rfind() to work properly when a sub-pos is specified, R. Nagy
-// 10/04/04: Added slice(), R. Nagy
-// 11/24/04: Renamed zstring to StdString to support other compilers better, R. Nagy
-// 12/16/04: Added StdString(const char ch, size_t size), R. Nagy
-// 01/04/05: Fixed a bug that somehow crept into rfind(), R. Nagy
-// 01/08/05: Fixed a bug in remove() that kept ALL occurences of `pattern` from being replaced, R. Nagy
-// 01/25/05: Added tag_remove(), R. Nagy
-// 05/30/05: Removed bug in rfind(StdString&, size_t) - now might cost more, but it works right, R. Nagy
-// 02/24/06: Fixed a bug in StdString(const char ch, size_t size), R. Nagy
-// 08/29/06: Added rCommon() and Common(), R. Nagy
-// 10/28/06: Added static Encode/Decode capability, R. Nagy
-// 11/25/06: Added ends_with(), R. Nagy
-// 12/05/06: Fixed bug in replace(again?) that occurred when a replacement containsed the pattern to replace, R. Nagy
-// 12/22/06: Added remove(const StdString&) - Also fixed a bug that crept into remove_token(), R. Nagy
+// 03/13/01: Fixed operator >() and operator <() to work as expected with quicksort, Randall Nagy.
+// 03/20/01: Fixed remove_pattern() signature to more accurately represent what function does, Randall Nagy
+// 06/12/01: Fixed underflow bug in Clip(), Randall Nagy
+// 06/21/01: Added assign(istream&), Randall Nagy
+// 09/08/01: Updated read() and read_stream() to react better on stream error, Randall Nagy
+// 10/14/01: Fixed a bug that had crept into in rfind(), Randall Nagy
+// 06/04/02: Fixed bug in remove_token(), Randall Nagy
+// 08/09/02: Fixed bug in is_white(), Randall Nagy
+// 08/23/02: Finally added additon operators, Randall Nagy
+// 10/21/02: Added to_up_low(), Randall Nagy
+// 11/25/02: Added find_any() and rfind_any() to avoid confusion while using case-insensitive form of earlier namesakes, Randall Nagy
+// 12/26/02: Fixed bug that crept into assign(psz, size_t, size_t), Randall Nagy
+// 01/12/03: Porting over to Linux (GCC), Randall Nagy
+// 11/09/03: Changed usage of operator+ to concatenate and create a new string. Operator += still appends, Randall Nagy
+// 04/06/04: Added enumerate(), Randall Nagy
+// 04/26/04: Added to_long(), Randall Nagy
+// 05/02/04: Added append(const char ch, size_t count), Randall Nagy
+// 06/07/04: Fixed rfind() to work properly when a sub-pos is specified, Randall Nagy
+// 10/04/04: Added slice(), Randall Nagy
+// 11/24/04: Renamed zstring to StdString to support other compilers better, Randall Nagy
+// 12/16/04: Added StdString(const char ch, size_t size), Randall Nagy
+// 01/04/05: Fixed a bug that somehow crept into rfind(), Randall Nagy
+// 01/08/05: Fixed a bug in remove() that kept ALL occurences of `pattern` from being replaced, Randall Nagy
+// 01/25/05: Added tag_remove(), Randall Nagy
+// 05/30/05: Removed bug in rfind(StdString&, size_t) - now might cost more, but it works right, Randall Nagy
+// 02/24/06: Fixed a bug in StdString(const char ch, size_t size), Randall Nagy
+// 08/29/06: Added rCommon() and Common(), Randall Nagy
+// 10/28/06: Added static Encode/Decode capability, Randall Nagy
+// 11/25/06: Added ends_with(), Randall Nagy
+// 12/05/06: Fixed bug in replace(again?) that occurred when a replacement containsed the pattern to replace, Randall Nagy
+// 12/22/06: Added remove(const StdString&) - Also fixed a bug that crept into remove_token(), Randall Nagy
 //
 #ifndef StdString_hpp
 #define StdString_hpp
@@ -185,7 +185,7 @@ namespace stdnoj {
 #define EXPORT
 #endif
 
-    class EXPORT StdString // DOC: The `StdString` class and it's derivitaves are copyright (c) 1997 - 2000 by R. A. Nagy. Permission is granted to use and modify these classes as long as copyright holder is not held responsible for any problems resulting from use. All rights reserved.
+    class EXPORT StdString // DOC: The `StdString` class and it's derivitaves are copyright (c) 1997 - 2000 by Randall Nagy. Permission is granted to use and modify these classes as long as copyright holder is not held responsible for any problems resulting from use. All rights reserved.
     {
     private:
         char *psz_alloc;

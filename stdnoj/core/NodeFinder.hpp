@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -22,21 +22,21 @@ IN THE SOFTWARE.
 
  */
 // Folders: Set of classes to update the SubDirs() way of thinking.
-// 10/02/1997: GetFiles tool created, R. Nagy
-// 10/03/1997: Warning, Folder, FolderFinder, WarnNoFolder, WarnFindStopped classes, R. Nagy.
+// 10/02/1997: GetFiles tool created, Randall Nagy
+// 10/03/1997: Warning, Folder, FolderFinder, WarnNoFolder, WarnFindStopped classes, Randall Nagy.
 // 08/16/1999: Fixed bug that would result in dot-prefixed (WIN32) directories being ignored, rn.
 // 10/07/1999: Dropped use of AFX header: Not that important to THIS file. Others can just use it
 //    as-needed, with the required "nafxcwd.lib" in their link, as well.
 // 01/14/2000: Renamed Folders.hpp FolderFinder.hpp. Moved inline functions off into cpp file.
-//    Added support for QueryFolderReport, R. Nagy
+//    Added support for QueryFolderReport, Randall Nagy
 //
 // Portability note: Though the ability to find a node is system dependant, the Reporting
 // classes could easily become a NodeReport, as the WIN32 data-structure being offered up to
 // the File() and Report() functions could just as easily be a "Node".
 //
-// 06/01/2001: Added ShouldContinue(), R. Nagy
+// 06/01/2001: Added ShouldContinue(), Randall Nagy
 //
-// 11/13/2008: Gutted class. Unifying implementation, R. Nagy 
+// 11/13/2008: Gutted class. Unifying implementation, Randall Nagy 
 //    Goal is to make it work on ALL platforms. Never completed ports.
 //    Need to implement recursion with standard File / Directory logic.
 //

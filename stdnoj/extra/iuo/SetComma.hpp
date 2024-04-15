@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -24,10 +24,10 @@ IN THE SOFTWARE.
 // Class SetComma: Scavanged from my old pvPrompter class, this stand-alone
 // class is now available for general use.
 //
-// 06/18/2001: Class created, R. Nagy
-// 07/15/2003: Moved under stdnoj, R. Nagy
+// 06/18/2001: Class created, Randall Nagy
+// 07/15/2003: Moved under stdnoj, Randall Nagy
 //             Got rid of stringstream usage due to bugs in same under threaded operations.
-// 09/06/2003: Changed usage to static, renamed class. R. Nagy
+// 09/06/2003: Changed usage to static, renamed class. Randall Nagy
 //
 #ifndef SetComma_Hpp
 #define SetComma_Hpp

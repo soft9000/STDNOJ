@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy
+Copyright (c) 1993 - 2024 Randall Nagy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to
@@ -28,7 +28,7 @@ IN THE SOFTWARE.
 // Targeted syntax is "protocol://<user>:<password>@<host>:<port>/<url-path>"
 
 //
-// 08/21/2008: Started, R. Nagy
+// 08/21/2008: Started, Randall Nagy
 //
 #ifndef xzUrl_Hpp
 #define xzUrl_Hpp

@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R.A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -24,7 +24,7 @@ IN THE SOFTWARE.
 // SmallChange: Project to demonstrate stdnoj capabilities by creating a 
 // programable, system-wide HTTP log repository and query capability.
 //
-// 10/11/2003: Added command and option storage ability, R. Nagy
+// 10/11/2003: Added command and option storage ability, Randall Nagy
 //
 #include "SmallChange.hpp"
 

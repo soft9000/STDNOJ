@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -53,28 +53,28 @@ IN THE SOFTWARE.
 // or FastFlatFile<T>: Those are more heavy-weight database classes. They provide 
 // for a MUCH more accountable database implementation!
 //
-// 07/22/1997: Class Created, R. Nagy
-// 11/05/1997: Added AppendDataOnly(), R. Nagy
+// 07/22/1997: Class Created, Randall Nagy
+// 11/05/1997: Added AppendDataOnly(), Randall Nagy
 // 03/19/1998: Realized that StdSeek<> can successfully track and append data to 
 // ANYthing (an icon, for example): Resolved that the implementing class has the 
 // requirement to control the desirability of this type of behavior: For example,
-// you might choose to append your data onto a FileVersion object (etc). R. Nagy
+// you might choose to append your data onto a FileVersion object (etc). Randall Nagy
 //
 // 06/17/1999: Promoted a variant of Replace(QuoteDatabaseV1), then felt obliged 
-//    to add CopyTo(), Rename(), and Pack(), R. Nagy
+//    to add CopyTo(), Rename(), and Pack(), Randall Nagy
 // 10/28/1999: Externalized the "class B", so we can over-ride it for items like 
-//    UserQuoteList, which needs a different type of index-file, R. Nagy
+//    UserQuoteList, which needs a different type of index-file, Randall Nagy
 // 11/26/2003: Updated to file object usage to avoid Microsoft VC6 streams 
-//    usage problems, R. Nagy
-// 11/30/2003: Fix for the Microsoft tellp streams bug (VC 6), R. Nagy
-// 08/03/2008: Created spi::test and re-tested same under VS.NET 2003, R. Nagy
+//    usage problems, Randall Nagy
+// 11/30/2003: Fix for the Microsoft tellp streams bug (VC 6), Randall Nagy
+// 08/03/2008: Created spi::test and re-tested same under VS.NET 2003, Randall Nagy
 // 08/04/2008: Changed long template parameter default to seek_t for backwards 
-// compatability, R. Nagy
+// compatability, Randall Nagy
 // - old (iostream.h) long was a long (4 bytes under wintel)
 // - new (iostream)   long is 24 bytes!!
-// 01/05/2008: Updated seeking to use stdonj::File, R. Nagy
-// 08/26/2005: Modernized and simplified the public interface, R. Nagy
-// 07/16/2006: Re-introduced QueryFileName, R. Nagy
+// 01/05/2008: Updated seeking to use stdonj::File, Randall Nagy
+// 08/26/2005: Modernized and simplified the public interface, Randall Nagy
+// 07/16/2006: Re-introduced QueryFileName, Randall Nagy
 //
 
 #include <stdnoj.hpp>
@@ -263,7 +263,7 @@ namespace stdnoj {
     template <class T, class B>
     bool StdSeek<T, B>::Create(void) {
         // 11/26/2003: Implementation used to simply return true. 
-        // Invlaid with Microsoft stream implementaiton on VC6.0, R. Nagy
+        // Invlaid with Microsoft stream implementaiton on VC6.0, Randall Nagy
         if (Remove() == false)
             return false;
         File file;
@@ -328,10 +328,10 @@ namespace stdnoj {
             if (!fs)
                 return false;
             fs.seekg(sp);
-            if (!fs) // 12/06/2003: Changed from .bad testing to any failure, R. Nagy
+            if (!fs) // 12/06/2003: Changed from .bad testing to any failure, Randall Nagy
                 return false;
             ref.read(fs);
-            if (fs) // 12/06/2003: Changed from .eof testing to any failure, R. Nagy
+            if (fs) // 12/06/2003: Changed from .eof testing to any failure, Randall Nagy
                 return true;
         }
         return false;
@@ -342,7 +342,7 @@ namespace stdnoj {
     bool StdSeek<T, B>::Append(const T& ref) {
         B sp;
         if (AppendDataOnly(ref, sp) == true) {
-            if (indexFile.append(sp) == sp_npos) // 11/26/2003, R. Nagy
+            if (indexFile.append(sp) == sp_npos) // 11/26/2003, Randall Nagy
                 return false;
             return true;
         }

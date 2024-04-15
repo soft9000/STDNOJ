@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -25,7 +25,7 @@ IN THE SOFTWARE.
 // things like keeping reack of the lines in a file, listbox, or other containers
 // where the exact number of lines are known and relatively static.
 //
-// 08/17/2008: Class created, tested and verified, R. Nagy
+// 08/17/2008: Class created, tested and verified, Randall Nagy
 //
 #ifndef BasicLineManager_Hppx
 #define BasicLineManager_Hppx

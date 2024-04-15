@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -24,7 +24,7 @@ IN THE SOFTWARE.
 // Class SetComma: Scavanged from my old pvPrompter class, this stand-alone
 // class is now available for general use.
 //
-// 10/18/2008: Class created, R. Nagy
+// 10/18/2008: Class created, Randall Nagy
 //
 
 class Integer {

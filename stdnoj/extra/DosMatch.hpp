@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1999 - 2024 R. A. Nagy 
+Copyright (c) 1999 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -25,10 +25,10 @@ IN THE SOFTWARE.
 // NOTE: The name might say `DOS`, but the implementation is PLATFORM INDEPENDANT!!
 // ====  Use where ever C++ is sold!!
 //
-// Class created 12/18/1999, R. Nagy
-// 12/27/1999: Added test cases to intercept a few bugs that came up in EzSearch, R. Nagy.
+// Class created 12/18/1999, Randall Nagy
+// 12/27/1999: Added test cases to intercept a few bugs that came up in EzSearch, Randall Nagy.
 //             Dumped the silly "Bool" usage, as it broke Borland (sigh).
-// 08/09/2005: Ported over to stdnoj, R. Nagy
+// 08/09/2005: Ported over to stdnoj, Randall Nagy
 //
 #ifndef DosMatch_Hpp
 #define DosMatch_Hpp

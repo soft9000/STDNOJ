@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -28,7 +28,7 @@ IN THE SOFTWARE.
 
 #include <stdnoj.hpp>
 
-// 09/23/2003: Ported to stdnoj, R. Nagy
+// 09/23/2003: Ported to stdnoj, Randall Nagy
 
 using namespace stdnoj;
 

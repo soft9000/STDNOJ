@@ -1,9 +1,9 @@
 // Class htmlParser: Designed to read same. This class is the new base for all
 // parsing of tagged grammers.
 //
-// 10/19/2000, Class created tonight while teaching first "java class" in Chicago, R. Nagy
-// 10/23/2000, Debugged, tested, and working 100%, R. Nagy
-// 09/16/2003, Fixed bugs in htmlBlock::read() & re-worked internal representation, R. Nagy
+// 10/19/2000, Class created tonight while teaching first "java class" in Chicago, Randall Nagy
+// 10/23/2000, Debugged, tested, and working 100%, Randall Nagy
+// 09/16/2003, Fixed bugs in htmlBlock::read() & re-worked internal representation, Randall Nagy
 //             Also removed htmlBlock parentage, and mapped to ANSI `bool` usage.
 //
 // NOTE: The htmlTag class detects the location of all <> delimited tokens.

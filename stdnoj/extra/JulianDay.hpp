@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -34,9 +34,9 @@ IN THE SOFTWARE.
 // More free stuff awaits you at "The Quote For Today".
 // Come check us out at http://www.TheQuoteForToday.com 
 //
-// 02/26/2001: Functions created, R. Nagy
+// 02/26/2001: Functions created, Randall Nagy
 // 06/18/2001: Renamed to JulianDay.HPP for class development.
-// 09/23/2003: Ported to stdnoj, R. Nagy
+// 09/23/2003: Ported to stdnoj, Randall Nagy
 //
 #ifndef z_Julianday_hpp
 #define z_Julianday_hpp

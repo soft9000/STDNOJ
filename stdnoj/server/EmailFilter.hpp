@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -24,10 +24,10 @@ IN THE SOFTWARE.
 // Class EMailFilter: Allows filtering of its namesake for desirability. Originally
 // written to "grep" rfc977 items (news) for HyperRfc.
 //
-// 01/16/1998: Classes EMailFilter and EMailAND written, R. Nagy.
-// 01/17/1998: Added class EMailOR, R. Nagy
-// 12/26/1998: Added EMailAndOrNotExtended, R. Nagy
-// 09/23/2003: Ported to stdnoj, R. Nagy
+// 01/16/1998: Classes EMailFilter and EMailAND written, Randall Nagy.
+// 01/17/1998: Added class EMailOR, Randall Nagy
+// 12/26/1998: Added EMailAndOrNotExtended, Randall Nagy
+// 09/23/2003: Ported to stdnoj, Randall Nagy
 //
 #ifndef zEMailFiltre_Hpp
 #define zEMailFiltre_Hpp

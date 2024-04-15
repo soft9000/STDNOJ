@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -24,10 +24,10 @@ IN THE SOFTWARE.
 // Class StdLogger: Class to allow for the creation of a fully-qualified log-file. Need to keep the log
 // files from floatin' round! Also needed to get access to the Format() for GUI / non-stream based logging.
 //
-// 01/17/1998: StdLog class created, R. Nagy.
-// 01/21/1998: Broke-out StdLogger to return formatted string (Better for GUI, etc), R. Nagy
+// 01/17/1998: StdLog class created, Randall Nagy.
+// 01/21/1998: Broke-out StdLogger to return formatted string (Better for GUI, etc), Randall Nagy
 //             Added the Print/PrintLine(os, psz, 1) idea form the StdSocket LOG capability.
-// 09/19/2003: Ported StdLogger over to stdnoj/extra/StdLog.hpp, R. Nagy
+// 09/19/2003: Ported StdLogger over to stdnoj/extra/StdLog.hpp, Randall Nagy
 //             Added a few functions & changed poor constructor init logic.
 //
 #ifndef zStdLogger_Hpp

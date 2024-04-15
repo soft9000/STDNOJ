@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy
+Copyright (c) 1993 - 2024 Randall Nagy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to
@@ -21,13 +21,13 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE.
 
  */
-// 11/12/1998, Created OutboundEMail to support PostJOB1, R. Nagy
-// 11/16/1998, Added FileVersion support, R. Nagy
-// 05/17/1999, Now MUST use "Load()" and "Save()": Moved read() and write() into "protected", R. Nagy
-// 09/23/2003: Ported to FastJob, R. Nagy
-// 06/17/2004: Added Load and Save for file objects, R. Nagy
-// 01/10/2008: Updated Pop3Server::Get() to use subject name (new EMailFactory member MkLocalName() overload), R. Nagy
-// 02/11/2009: Copied from FastJob to stdnoj - Email* IO changed to be in native / RFC format (stdnoj / EPOP) ONLY, R. Nagy
+// 11/12/1998, Created OutboundEMail to support PostJOB1, Randall Nagy
+// 11/16/1998, Added FileVersion support, Randall Nagy
+// 05/17/1999, Now MUST use "Load()" and "Save()": Moved read() and write() into "protected", Randall Nagy
+// 09/23/2003: Ported to FastJob, Randall Nagy
+// 06/17/2004: Added Load and Save for file objects, Randall Nagy
+// 01/10/2008: Updated Pop3Server::Get() to use subject name (new EMailFactory member MkLocalName() overload), Randall Nagy
+// 02/11/2009: Copied from FastJob to stdnoj - Email* IO changed to be in native / RFC format (stdnoj / EPOP) ONLY, Randall Nagy
 //
 #ifndef EMailFactory_Hpx
 #define EMailFactory_Hpx
@@ -40,7 +40,7 @@ using namespace stdnoj;
 /**
  * class EMailFactory
  *
- * @author R. Nagy
+ * @author Randall Nagy
  */
 class EMailFactory
    {

@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -33,22 +33,22 @@ IN THE SOFTWARE.
 // what you need.
 //
 // 03/17/2002: Class created by retro-verifying and extracting operations in
-// Phones application, R. Nagy
+// Phones application, Randall Nagy
 // 06/10/2002: By adding the Tally() member and using it to pre-allocate, we
 // reduced the load time of a 777 PHONES entry file from around 7 seconds to
-// sub-second, R. Nagy
-// 06/11/2002: Eliminated #define: Split DFO into DFO_Array and DFO, R. Nagy
-// 07/06/2002: Extracted and publicized read() and write(), R. Nagy
-// 08/01/2002: Specified array operators =() and ==() for better support, R. Nagy
-// 09/02/2002: Added Swap(), R. Nagy
-// 09/06/2002: Fixed bug in Swap() and removed !is.eof(), as it was causing strange problems, R. Nagy
-// 05/01/2005: Added Query(array), Append(array), better File support, and re-arranged the model, R. Nagy
-// 05/16/2005: Added QSort(void), R. Nagy
-// 07/19/2005: Added read/write_heap functions - Legacy code uses both fast pre-allocated AND slower heap-rec-io strategies, R. Nagy
-// 07/23/2006: Now requiring File::TranslationModes mode on all Load and Save operations, R. Nagy
-// 08/20/2006: Added the AsArray parameter for better backwards-compatability (DFO_BLOCK_WRITE support), R. Nagy
-//             Fixed a few bugs in Tally(), R. Nagy
-// 09/09/2006: Fixed a few AsArray oversights in ... everything, R. Nagy
+// sub-second, Randall Nagy
+// 06/11/2002: Eliminated #define: Split DFO into DFO_Array and DFO, Randall Nagy
+// 07/06/2002: Extracted and publicized read() and write(), Randall Nagy
+// 08/01/2002: Specified array operators =() and ==() for better support, Randall Nagy
+// 09/02/2002: Added Swap(), Randall Nagy
+// 09/06/2002: Fixed bug in Swap() and removed !is.eof(), as it was causing strange problems, Randall Nagy
+// 05/01/2005: Added Query(array), Append(array), better File support, and re-arranged the model, Randall Nagy
+// 05/16/2005: Added QSort(void), Randall Nagy
+// 07/19/2005: Added read/write_heap functions - Legacy code uses both fast pre-allocated AND slower heap-rec-io strategies, Randall Nagy
+// 07/23/2006: Now requiring File::TranslationModes mode on all Load and Save operations, Randall Nagy
+// 08/20/2006: Added the AsArray parameter for better backwards-compatability (DFO_BLOCK_WRITE support), Randall Nagy
+//             Fixed a few bugs in Tally(), Randall Nagy
+// 09/09/2006: Fixed a few AsArray oversights in ... everything, Randall Nagy
 //
 #if 0
 

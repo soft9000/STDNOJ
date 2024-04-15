@@ -1,4 +1,4 @@
-// 10/24/1998, Ran through NOTAB, R. Nagy
+// 10/24/1998, Ran through NOTAB, Randall Nagy
 //
 
 #include <server/Email.hpp>
@@ -215,7 +215,7 @@ bool EMailMessage::EncodeHTML(EMailMessage& ref, const StdString& sHtmlMessage)
    {
    ref.ContentType("text/html");
 
-   // This is a quick fix - Easy line folding - 2/10/2007, R. Nagy
+   // This is a quick fix - Easy line folding - 2/10/2007, Randall Nagy
    StdString sMessage = sHtmlMessage;
    sMessage.replace("><", "> <");   // observed -  often need logical a place TO wrap!
    sMessage = TextFormatting::WordWrap::WrapDos(sMessage, 0, 0, 65);

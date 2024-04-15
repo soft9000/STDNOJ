@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -27,7 +27,7 @@ IN THE SOFTWARE.
 // NumericBase is a classic wrapper class for primitive types. 
 // Supports the most commonly used operators. Expanded as needed (typical noj credo).
 //
-// 10/18/2008: Class created, R. Nagy
+// 10/18/2008: Class created, Randall Nagy
 //
 
 #include <stdnoj.hpp>

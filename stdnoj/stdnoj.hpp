@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy
+Copyright (c) 1993 - 2024 Randall Nagy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to
@@ -24,10 +24,10 @@ IN THE SOFTWARE.
 
 // 06/21/2003: Need to modernize my huge legacy.
 // 08/21/2008: Moved more headers from older to newer (cstdio, etc.)
-// 11/13/2008: Added CommonObject. Applied parentage to File, Directory, and Node, R. Nagy
-// 11/24/2008: Re-compiling under MSDOS, R. Nagy
-// 07/15/2008: Re-compiling under WIN32, R. Nagy
-// 07/18/2008: Re-compiling under cygwin, R. Nagy
+// 11/13/2008: Added CommonObject. Applied parentage to File, Directory, and Node, Randall Nagy
+// 11/24/2008: Re-compiling under MSDOS, Randall Nagy
+// 07/15/2008: Re-compiling under WIN32, Randall Nagy
+// 07/18/2008: Re-compiling under cygwin, Randall Nagy
 
 #ifndef stdnoj1
 #define stdnoj1
@@ -50,7 +50,7 @@ namespace stdnoj {
     /**
      * class StdString
      *
-     * @author R. Nagy
+     * @author Randall Nagy
      * @comment Considering the gradual introduction of JAVA style documentation a-la CppDoc -
      */
     class StdString;

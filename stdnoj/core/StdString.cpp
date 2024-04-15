@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy
+Copyright (c) 1993 - 2024 Randall Nagy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -635,10 +635,10 @@ namespace stdnoj {
     }
 
     istream& StdString::read(istream& is) {
-        if (is) // 7/16/2001, R. Nagy
+        if (is) // 7/16/2001, Randall Nagy
         {
             char *pbuf = new char[max_read];
-            is >> pbuf; // 7/16/2001, R. Nagy [BUGFIX]!
+            is >> pbuf; // 7/16/2001, Randall Nagy [BUGFIX]!
             if (!is)
                 pbuf[0] = 0;
             assign(pbuf);

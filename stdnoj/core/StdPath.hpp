@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -25,7 +25,7 @@ IN THE SOFTWARE.
 // a way to associate relative paths to the htree type om "mount
 // points" (Directory, File, and Url)
 //
-// 08/25/2005: Created, R. Nagy
+// 08/25/2005: Created, Randall Nagy
 //
 #ifndef STD_PATH_HPP
 #define STD_PATH_HPP

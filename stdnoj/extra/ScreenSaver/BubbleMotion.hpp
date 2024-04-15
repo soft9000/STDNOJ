@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy
+Copyright (c) 1993 - 2024 Randall Nagy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -24,8 +24,8 @@ IN THE SOFTWARE.
 // ScreenSaver: Classes to support moving rectangles (etc) about as used in
 // a screen-saver (etc).
 //
-// 07/03/2003: Class created by refactoring old OmniWind BubbleMotion class, R. Nagy
-// 12/03/2006: ScreenSaver namespace created, R. Nagy
+// 07/03/2003: Class created by refactoring old OmniWind BubbleMotion class, Randall Nagy
+// 12/03/2006: ScreenSaver namespace created, Randall Nagy
 //
 #ifndef BubMot_hpx
 #define BubMot_hpx

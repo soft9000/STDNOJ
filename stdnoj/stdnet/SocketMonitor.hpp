@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -23,7 +23,7 @@ IN THE SOFTWARE.
  */
 // 09/15/2006: Refactored StdSocket::MonitorConnection() into 
 //             nojnet::SocketMonitor class .Still needs to be tested for 
-//             possible regression, R. Nagy
+//             possible regression, Randall Nagy
 //
 #ifndef SocketMonitor78_hpx
 #define SocketMonitor78_hpx

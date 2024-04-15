@@ -2,8 +2,8 @@
 // A universally-reusable pattern matcher and result-set manager. If you can express your recird as a
 // string, then you can search and display the markup results for any record set.
 //
-// 03/29/2006: Namespace modeled, most classes implemented, R. Nagy
-// 07/16/2008: Added CompArray, R. Nagy
+// 03/29/2006: Namespace modeled, most classes implemented, Randall Nagy
+// 07/16/2008: Added CompArray, Randall Nagy
 #ifndef StringMatcher_hpx
 #define StringMatcher_hpx
 

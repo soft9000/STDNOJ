@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -24,13 +24,13 @@ IN THE SOFTWARE.
 // Class Directory: Created to remove and add a name-space to all of theos functions that
 // we are building up in the "FILE_FUN.HPP". Like File.hpp, only for directories.
 //
-// 12/22/1999: Class created, R. Nagy
-// 11/02/2002: Added GoTo and File / Directory Query capabilities, R. Nagy
-// 10/30/2003: Added QueryNode() and QueryParent() [to complement File signature], R. Nagy
-// 06/17/2008: Updated Name() to prefix with pwd for non-absolute path names, R. Nagy
-// 11/13/2008: Lightly updated to support commmon usage, R. Nagy
-// 02/28/2006: Added Launch(), R. Nagy
-// 08/28/2006: Added QueryTree(recursive) for File and Directory, R. Nagy
+// 12/22/1999: Class created, Randall Nagy
+// 11/02/2002: Added GoTo and File / Directory Query capabilities, Randall Nagy
+// 10/30/2003: Added QueryNode() and QueryParent() [to complement File signature], Randall Nagy
+// 06/17/2008: Updated Name() to prefix with pwd for non-absolute path names, Randall Nagy
+// 11/13/2008: Lightly updated to support commmon usage, Randall Nagy
+// 02/28/2006: Added Launch(), Randall Nagy
+// 08/28/2006: Added QueryTree(recursive) for File and Directory, Randall Nagy
 //
 
 #ifndef Directory_Hpp

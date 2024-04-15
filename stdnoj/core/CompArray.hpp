@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -23,9 +23,9 @@ IN THE SOFTWARE.
  */
 // A BETTER sort for an array that uses several different facets.
 //
-// 11/09/2001: Added Swap(), Sort(), and Comparitor (Don't know why I didn't to it earlier!), R. Nagy
+// 11/09/2001: Added Swap(), Sort(), and Comparitor (Don't know why I didn't to it earlier!), Randall Nagy
 // 11/19/2001: Broke out into seperate header, with inheritance, for backwards-compatability and maintenance reasons.
-// 05/16/2005: Added QSort(void), R. Nagy
+// 05/16/2005: Added QSort(void), Randall Nagy
 // ****************************************************************************
 #ifndef _CompArray_HPP
 #define _CompArray_HPP
@@ -52,9 +52,9 @@ namespace stdnoj {
         CompArray(const CompArray<T, SZ> & old);
         virtual ~CompArray(void);
 
-        void Swap(SZ ss1, SZ ss2); // 11/09/2001: R. Nagy
-        virtual void QSort(void); // 05/16/2005: R. Nagy
-        virtual void Sort(MemberComp<T>& cmp); // 11/09/2001: R. Nagy
+        void Swap(SZ ss1, SZ ss2); // 11/09/2001: Randall Nagy
+        virtual void QSort(void); // 05/16/2005: Randall Nagy
+        virtual void Sort(MemberComp<T>& cmp); // 11/09/2001: Randall Nagy
 
         virtual CompArray<T> & operator=(const Array<T>& ref) {
             Array<T>::operator=(ref);

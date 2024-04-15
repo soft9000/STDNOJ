@@ -1,7 +1,7 @@
 // Class TagZapper: Removed from htmlParser and encapsulated to create a new class
 // for the NOJ Library.
 //
-// 04/13/2008: Class created by wrappering some functionality from my htmlParser classes, R. Nagy
+// 04/13/2008: Class created by wrappering some functionality from my htmlParser classes, Randall Nagy
 //
 #ifndef _TagZapper_Hpp
 #define _TagZapper_Hpp

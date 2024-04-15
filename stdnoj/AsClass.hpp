@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -22,8 +22,8 @@ IN THE SOFTWARE.
 
  */
 // AsClass<T>: Allow a base-type to participate in the Array<T> (etc).
-// 03/25/2000: Class created, R. Nagy
-// 08/03/2008: Ported over to stdnoj, R. Nagy
+// 03/25/2000: Class created, Randall Nagy
+// 08/03/2008: Ported over to stdnoj, Randall Nagy
 //
 #ifndef AsClass1B_Hpp
 #define AsClass1B_Hpp

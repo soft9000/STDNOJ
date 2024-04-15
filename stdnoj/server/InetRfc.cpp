@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -1007,7 +1007,7 @@ bool Rfc977NewsGroupServer::GetMagicBuffer(NewsGroup& ng, ArticleThunk& at, stri
 }
 
 bool SmtpServer::Connect(HostName& hn, UserData& ud) {
-    // Added on 08/17/2002, R. Nagy
+    // Added on 08/17/2002, Randall Nagy
     bool bUseHelo = true;
     StdString str;
     ud.SetError(str);
@@ -1030,7 +1030,7 @@ bool SmtpServer::Connect(HostName& hn, UserData& ud) {
         return false;
     }
 
-    // 08/17/2002, R. Nagy
+    // 08/17/2002, Randall Nagy
     if (bUseHelo == false)
         return true;
 
@@ -1142,7 +1142,7 @@ void SmtpServer::Disconnect(HostName& hn) {
 }
 
 bool SmtpServer::Connect(UserData& ud) {
-    // 08/17/2002, R. Nagy 
+    // 08/17/2002, Randall Nagy 
     StdString str;
     str = ud.Authorize(*this);
     if (str.is_null()) {

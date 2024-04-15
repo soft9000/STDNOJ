@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -74,7 +74,7 @@ bool FileInformation::Update(void)
 bool FileInformation::Get(const StdString& std)
    {
 /*
-   // 5/22/2001: Changed to accept read-only, as well as other type of files, R. Nagy
+   // 5/22/2001: Changed to accept read-only, as well as other type of files, Randall Nagy
    HANDLE hFile = ::CreateFile(std.c_str(),
       0,    // 5/8/2003 BUGFIX: WE ONLY WANT INODE ACCESS => DO NOT USE "GENERIC_READ" or "GENRRIC_WRITE". FAILS ON IN-USE FILES.
       FILE_SHARE_READ,

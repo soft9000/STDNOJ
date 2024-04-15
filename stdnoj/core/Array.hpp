@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -26,18 +26,18 @@ IN THE SOFTWARE.
 // -The only requirement for the object to be stored is that it be streamable,
 // and operator= works as expected (4object duplication when array expands).
 //
-// 11/22/94, R. Nagy.
+// 11/22/94, Randall Nagy.
 // Took my ARRAY soluton from the ADVANCEDC++ class, fixed numerous bugs, and grew into
 // the class you see here.
 //
-// 04/29/94, R. Nagy
+// 04/29/94, Randall Nagy
 // Renamed a lot of members. Added the Insert() and Remove().
 //
-// 02/10/96, R. Nagy
+// 02/10/96, Randall Nagy
 // Fixed bug in expandActive(), operator==() calls object== (rather than !=), added Nelem().
 // TOOK MEMSET OUT OF ARRAY! IT'S EVIL!! CAN REALY SCREW-UP AN ARRAY OF OBJECTS!!
 //
-// 02/11/96, R. Nagy
+// 02/11/96, Randall Nagy
 // Re-tested and integrated the 'numZombie' feature.  numZombie allows for the array
 // to dynamically contract (create trailing "zombies") THEN expandActive (res-use same)
 // so as to bypass expensive node re-allocations.  Also added and tested Empty().
@@ -51,49 +51,49 @@ IN THE SOFTWARE.
 // machines (i.e: Use Baggie<T>).
 // ////////////////////////////////////////////////////////////////////////////
 //
-// 02/20/96: Fixed a bug I introduced last time: expandActive(0) went to += 0, R. Nagy.
+// 02/20/96: Fixed a bug I introduced last time: expandActive(0) went to += 0, Randall Nagy.
 // Split features of Empty() between itself and new `Free()` member (4 BETTER
 // SPEED DURING RE-USE, STILL USE Empty()!).
 //
-// 05/31/97: Fixed bugs in Insert(), R. Nagy.
+// 05/31/97: Fixed bugs in Insert(), Randall Nagy.
 //
 // ////////////////////////////////////////////////////////////////////////////
 // SPEED, SPEED, SPEED!  This thing must be written for SPEED!! We can use Baggie<T>
 // when we don't need  R-A-W  S-P-E-E-D ! !
 // ////////////////////////////////////////////////////////////////////////////
 //
-// 11/26/1997: Warnings removed, finally re-coded operator >>, R. Nagy
-// 01/02/1998: Added read() and write(), R. Nagy
-// 01/06/1998: Publicised an AddZombies() to support pre-allocation (HyperRFC1), R. Nagy
+// 11/26/1997: Warnings removed, finally re-coded operator >>, Randall Nagy
+// 01/02/1998: Added read() and write(), Randall Nagy
+// 01/06/1998: Publicised an AddZombies() to support pre-allocation (HyperRFC1), Randall Nagy
 // 01/09/1998: Re-wrote the AddZombies() operation to do both "expandActive" (IUO)
 //    and AddZombies() (public). -Latter expands array, but sets it to zombie space.
-//    Former expands the array to active space. R. Nagy.
-// 01/20/1998: Fixed bug in operator=() when that.numActive == 0 got new T[0] (boom! on free), R. Nagy.
-// 03/13/1998: Had operator ==(), saw no harm in adding Contains(T&), R. Nagy.
-// 07/23/1998: Fixed a bug in operator=(): Needed to zero-out numZombie, R. Nagy.
-// 05/10/1999: Added stream checking on Array<T, SZ>::read(), R. Nagy
-// 08/11/1999: Added At(), R. Nagy.
-// 10/09/1999: Added Append(const Array<T>&), R. Nagy
-// 01/14/2000: Added SZ as second template parameter, R. Nagy
-// 01/19/2000: Added read(istream, FileVersion&), R. Nagy
-// 04/14/2001: Added Append(const T&) and operator +(const T&), R. Nagy
-// 08/17/2001: Fixed potential bug in ___xMqFY() that occurred when had no elements and no zombies, R. Nagy
-// 11/19/2001: Eliminated the potential of the dangling zombie object feature on erroneous array restoration (chalk one up for the learning curve (yeesh)), R. Nagy
-// 05/05/2002: Added AddZombies() to ::read() to help speed things up, R. Nagy
-// 05/26/2002: Ran through NOTAB (new era!), R. Nagy
-// 11/02/2004: Moved QuickSort<T, SZ> into this class, R. Nagy
-//    In a futile speed-up jesture, increased NZ_BLOCK_SIZE from 20 to 100, R. Nagy
-//    Ran through regression testing suite today. Fixed some bugs that (fortunately) were not part of my typical usage pattern. Required updates as indicated, R. Nagy
-//    Fixed bug in AddZombie, R. Nagy
-// 06/17/2004: Added Load/Save and moved Array underneath the stdnoj namespace, R. Nagy
-// 11/02/2004: Added QuickSort, R. Nagy
-// 11/24/2004: Removed File and FileVersion support to better support G++, R. Nagy
-// 01/02/2004: Added Dump(), R. Nagy
-// 04/22/2005: Improved the Append(Array<T>) operation - Speed and portability enhancements, R. Nagy
-// 04/02/2006: Added operator+(Array) and operator+=(Array), R. Nagy
-// 07/07/2006: Added T& At(ss) (const) to return a reference to avoid assignment copying (a speed improvement), R. Nagy
-// 09/08/2006: Changed write() to const by using At() rather than the never-can-be-const ("autogrow") operator[] - R. Nagy
-// 10/01/2006: Extraced ObjecThunk into its own file - We do not use it very often, R. Nagy
+//    Former expands the array to active space. Randall Nagy.
+// 01/20/1998: Fixed bug in operator=() when that.numActive == 0 got new T[0] (boom! on free), Randall Nagy.
+// 03/13/1998: Had operator ==(), saw no harm in adding Contains(T&), Randall Nagy.
+// 07/23/1998: Fixed a bug in operator=(): Needed to zero-out numZombie, Randall Nagy.
+// 05/10/1999: Added stream checking on Array<T, SZ>::read(), Randall Nagy
+// 08/11/1999: Added At(), Randall Nagy.
+// 10/09/1999: Added Append(const Array<T>&), Randall Nagy
+// 01/14/2000: Added SZ as second template parameter, Randall Nagy
+// 01/19/2000: Added read(istream, FileVersion&), Randall Nagy
+// 04/14/2001: Added Append(const T&) and operator +(const T&), Randall Nagy
+// 08/17/2001: Fixed potential bug in ___xMqFY() that occurred when had no elements and no zombies, Randall Nagy
+// 11/19/2001: Eliminated the potential of the dangling zombie object feature on erroneous array restoration (chalk one up for the learning curve (yeesh)), Randall Nagy
+// 05/05/2002: Added AddZombies() to ::read() to help speed things up, Randall Nagy
+// 05/26/2002: Ran through NOTAB (new era!), Randall Nagy
+// 11/02/2004: Moved QuickSort<T, SZ> into this class, Randall Nagy
+//    In a futile speed-up jesture, increased NZ_BLOCK_SIZE from 20 to 100, Randall Nagy
+//    Ran through regression testing suite today. Fixed some bugs that (fortunately) were not part of my typical usage pattern. Required updates as indicated, Randall Nagy
+//    Fixed bug in AddZombie, Randall Nagy
+// 06/17/2004: Added Load/Save and moved Array underneath the stdnoj namespace, Randall Nagy
+// 11/02/2004: Added QuickSort, Randall Nagy
+// 11/24/2004: Removed File and FileVersion support to better support G++, Randall Nagy
+// 01/02/2004: Added Dump(), Randall Nagy
+// 04/22/2005: Improved the Append(Array<T>) operation - Speed and portability enhancements, Randall Nagy
+// 04/02/2006: Added operator+(Array) and operator+=(Array), Randall Nagy
+// 07/07/2006: Added T& At(ss) (const) to return a reference to avoid assignment copying (a speed improvement), Randall Nagy
+// 09/08/2006: Changed write() to const by using At() rather than the never-can-be-const ("autogrow") operator[] - Randall Nagy
+// 10/01/2006: Extraced ObjecThunk into its own file - We do not use it very often, Randall Nagy
 // ****************************************************************************
 #ifndef _Array2_HPP
 #define _Array2_HPP
@@ -301,10 +301,10 @@ namespace stdnoj {
 
     template <class T, class SZ>
     void Array<T, SZ>::Append(const Array<T>& aAry) {
-        AddZombies(aAry.Nelem() + 1); // 04/22/2005 - Speed up, R. Nagy
+        AddZombies(aAry.Nelem() + 1); // 04/22/2005 - Speed up, Randall Nagy
         T ref;
         for (SZ ss = 0L; ss < aAry.Nelem(); ss++) {
-            aAry.At(ss, ref); // 04/22/2005 - Easier for compilers to "see", R. Nagy
+            aAry.At(ss, ref); // 04/22/2005 - Easier for compilers to "see", Randall Nagy
             Append(ref);
         }
     }
@@ -376,7 +376,7 @@ namespace stdnoj {
         // *******************************************************************************
 
         // If we have enough "Zombie" space to expandActive into, then use it;
-        if (numZombie && (numZombie >= nelem)) // 8/17/01 bug avoidance, R. Nagy
+        if (numZombie && (numZombie >= nelem)) // 8/17/01 bug avoidance, Randall Nagy
         {
             if (nelem == 0L)
                 nelem = 1;
@@ -505,9 +505,9 @@ namespace stdnoj {
     {
         if (ss >= numActive) {
             if (!numActive)
-                expandActive(ss); // 5/26/2002 R. Nagy (moved the +1 to expandActive)
+                expandActive(ss); // 5/26/2002 Randall Nagy (moved the +1 to expandActive)
             else
-                expandActive(ss - numActive); // 5/26/2002 R. Nagy (moved the +1 to expandActive)
+                expandActive(ss - numActive); // 5/26/2002 Randall Nagy (moved the +1 to expandActive)
         }
         return ObjAry[ss];
     }

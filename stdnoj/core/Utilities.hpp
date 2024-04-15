@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -23,7 +23,7 @@ IN THE SOFTWARE.
  */
 // 07/09/2005 - After considering my legacy WordWrap.hpp and SimpleTextFlow.hpp
 // work, I decided to add a new Paragraph rather than to include those into
-// the official namespace, R. Nagy
+// the official namespace, Randall Nagy
 //
 #ifndef stdnoj_util
 #define stdnoj_util

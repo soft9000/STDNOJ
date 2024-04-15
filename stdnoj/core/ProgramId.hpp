@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -29,26 +29,26 @@ IN THE SOFTWARE.
 // It also allow you to manipulate files and folders relative to both a system
 // wide, and a program relative, location. Very important for IPC and persistance.
 //
-// 04/28/1998: Class extracted from EzInstall base, R. Nagy
-// 09/07/1998: Replaced string with StdString to use in Job*NET, R. Nagy.
-// 11/23/1998: Added SetProgramDirectory(), R. Nagy.
-// 06/12/1999: Added PlaceInDirectory(), R. Nagy.
-// 06/14/1999: Added TempFileName(), R. Nagy.
-// 06/15/1999: Added PlaceInTempDirectory(), R. Nagy.
-// 11/25/1999: Added TempFileName(with suffix), R. Nagy
-// 12/22/1999: Added GetRepository(), R. Nagy
-// 08/24/2000: Added PlaceInSubDirectory() concept, R. Nagy
-// 01/01/2003: Added QuerySystemDirectory(), R. Nagy
-// 08/30/2003: Re-written as part of port to the noj framework, R. Nagy
-// 09/19/2003: Added PutInDirectory(Directory&, File&), R. Nagy
-// 12/03/2008: Added SetProgram(File&) to support DOS / UNIX, as well as to over-ride WIN32 API, R. Nagy
+// 04/28/1998: Class extracted from EzInstall base, Randall Nagy
+// 09/07/1998: Replaced string with StdString to use in Job*NET, Randall Nagy.
+// 11/23/1998: Added SetProgramDirectory(), Randall Nagy.
+// 06/12/1999: Added PlaceInDirectory(), Randall Nagy.
+// 06/14/1999: Added TempFileName(), Randall Nagy.
+// 06/15/1999: Added PlaceInTempDirectory(), Randall Nagy.
+// 11/25/1999: Added TempFileName(with suffix), Randall Nagy
+// 12/22/1999: Added GetRepository(), Randall Nagy
+// 08/24/2000: Added PlaceInSubDirectory() concept, Randall Nagy
+// 01/01/2003: Added QuerySystemDirectory(), Randall Nagy
+// 08/30/2003: Re-written as part of port to the noj framework, Randall Nagy
+// 09/19/2003: Added PutInDirectory(Directory&, File&), Randall Nagy
+// 12/03/2008: Added SetProgram(File&) to support DOS / UNIX, as well as to over-ride WIN32 API, Randall Nagy
 //             Re-wrtten to support MSDOS, UNIX, and WIN32.
 // Note: DOS and UNIX programs MUST call SetProgram() before using this class.
 //       WIN32 programs do not need to, but should now do so none the less (portability).
-// 01/11/2006: Added Home(File), R. Nagy
-// 02/24/2006: Added Home(Directory), R. Nagy
-// 05/06/2006: Renamed PlaceInSubDirectory() to Concat(), R. Nagy
-//             Added Home(sDir, sNode, chPath), R. Nagy
+// 01/11/2006: Added Home(File), Randall Nagy
+// 02/24/2006: Added Home(Directory), Randall Nagy
+// 05/06/2006: Renamed PlaceInSubDirectory() to Concat(), Randall Nagy
+//             Added Home(sDir, sNode, chPath), Randall Nagy
 
 #include <stdnoj.hpp>
 

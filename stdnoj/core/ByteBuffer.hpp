@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy
+Copyright (c) 1993 - 2024 Randall Nagy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -23,17 +23,17 @@ IN THE SOFTWARE.
  */
 // Class ByteBuffer: Used to manipulate arrays of same, with allignemnt.
 //
-// 03/03/1998, Class created, R. Nagy
-// 03/18/1998, Added read(is), write(os), and operator==(), R. Nagy
-// 04/28/1999, Added hexline(StdString&), R. Nagy
-// 05/19/1999, Added assign(const void *, size_t), R. Nagy
-// 05/21/1999, Fixed a classic "uni-buffer-freed" self-assignemnt bug, R. Nagy
-// 12/02/2000, Added read_file(), read_bytes() and more, and fixed a bug or two, R. Nagy
-// 11/30/2003: Renamed _hexdump xdump and made it public, R. Nagy
-// 04/26/2003: Changed is_null() to boolean usage, R. Nagy.
-// 11/21/2008: Added a few members to integrate better into the stdnoj paradigm, R. Nagy
-// 11/08/2006: Added read_stream and write_stream - Exact same IO as StdString, R. Nagy
-// 11/12/2006: Removed byte_t - Most have figgured that one out by now, R. Nagy
+// 03/03/1998, Class created, Randall Nagy
+// 03/18/1998, Added read(is), write(os), and operator==(), Randall Nagy
+// 04/28/1999, Added hexline(StdString&), Randall Nagy
+// 05/19/1999, Added assign(const void *, size_t), Randall Nagy
+// 05/21/1999, Fixed a classic "uni-buffer-freed" self-assignemnt bug, Randall Nagy
+// 12/02/2000, Added read_file(), read_bytes() and more, and fixed a bug or two, Randall Nagy
+// 11/30/2003: Renamed _hexdump xdump and made it public, Randall Nagy
+// 04/26/2003: Changed is_null() to boolean usage, Randall Nagy.
+// 11/21/2008: Added a few members to integrate better into the stdnoj paradigm, Randall Nagy
+// 11/08/2006: Added read_stream and write_stream - Exact same IO as StdString, Randall Nagy
+// 11/12/2006: Removed byte_t - Most have figgured that one out by now, Randall Nagy
 
 #ifndef ByteBuffer_Hpp
 #define ByteBuffer_Hpp

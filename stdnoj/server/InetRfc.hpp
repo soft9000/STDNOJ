@@ -1,6 +1,6 @@
 /* The MIT License (Open Source Approved)
 
-Copyright (c) 1993 - 2024 R. A. Nagy 
+Copyright (c) 1993 - 2024 Randall Nagy 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the "Software"), to 
@@ -22,19 +22,19 @@ IN THE SOFTWARE.
 
  */
 // Internet classes. Designed specifically to work with observed and documented RFC's.
-// (c) 1998 by R. A. Nagy.
+// (c) 1998 by Randall Nagy.
 //
 // 02/10/1998: Added the bShouldAbort members to support on-demand abortions.
-// 02/12/1998: Created and implemented the StatusObject for better status reporting, R. Nagy
-// 12/03/1998: Added PacketTimeout() and 'l_timeout` to reduce the 5 .. 8 minutes wait for BAILOUT, R. Nagy
-// 01/05/1999: Added t_GetAtMost(,, NELEM) to get <= AN EXACT COUNT from a group, R. Nagy
-// 04/30/1999: Added Post(), R. Nagy
-// 01/08/2000: Added Set/QueryVerbose(), R. Nagy
+// 02/12/1998: Created and implemented the StatusObject for better status reporting, Randall Nagy
+// 12/03/1998: Added PacketTimeout() and 'l_timeout` to reduce the 5 .. 8 minutes wait for BAILOUT, Randall Nagy
+// 01/05/1999: Added t_GetAtMost(,, NELEM) to get <= AN EXACT COUNT from a group, Randall Nagy
+// 04/30/1999: Added Post(), Randall Nagy
+// 01/08/2000: Added Set/QueryVerbose(), Randall Nagy
 // 03/06/2000: Fixed isdotmagic() (re-wrote around a context bug in .rfind(pos)).
-//             Also added the 'replace' parameter to same, R. Nagy
-// 08/17/2002: Added support for RFC821 HELO protocol, R. Nagy
-//             Added support for SMTP Login (i.e: promoted && re-used NNTP logic), R. Nagy
-// 09/23/2003: Ported to stdnoj, R. Nagy
+//             Also added the 'replace' parameter to same, Randall Nagy
+// 08/17/2002: Added support for RFC821 HELO protocol, Randall Nagy
+//             Added support for SMTP Login (i.e: promoted && re-used NNTP logic), Randall Nagy
+// 09/23/2003: Ported to stdnoj, Randall Nagy
 //
 #ifndef InetRfc_Hpp
 #define InetRfc_Hpp
@@ -232,7 +232,7 @@ private:
 
     StdString sOutputDirectory;
 
-public: // 06/16/2008, R. Nagy
+public: // 06/16/2008, Randall Nagy
     Array<StreamString> rErrorArray;
     Array<EMail> rArray;
 
