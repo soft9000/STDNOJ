@@ -1,9 +1,9 @@
 # STDNOJ
-Originally registered on [2003-11-06](https://sourceforge.net/projects/stdnoj/), this "Neat Odd Job" Library - also known as the "STDNOJ Namespace" is our traditional, cross-platform, C/C++ library.
-
-My STDNOJ Namespace features over 600 classes for Web, RFC & File Management.
-
 MISSION: Develop cross-platform tools faster using a C++ Framework proven in commercial software. 
+
+Created in 1993 and 'sourceforged' on [2003-11-06](https://sourceforge.net/projects/stdnoj/), this "Neat Odd Job" Library - also known as the "STDNOJ Namespace" is my traditional, cross-platform, C/C++ library.
+
+The STDNOJ Namespace features over 600 classes for Web, RFC & File Management.
 
 ## STDNOJ Features:
 Classes support logging, sockets, object indexing, ini, tagged databases, file systems, and more.
